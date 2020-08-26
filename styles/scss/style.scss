@@ -68,16 +68,39 @@ p {
     font-size: 2rem;
 }
 
+
+
+
+// header styles
+
+@mixin custom-header-bg ($image-url) {
+    background: url($image-url);
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 11.12rem;
+    color: $twilight-blue;
+    z-index: 10;
+        
+    span {
+        display: block;
+        text-transform: lowercase;
+        color: $spruce;
+        font-size: 6.2rem;
+        line-height: 5.8rem;
+        letter-spacing: 6.7;
+        font-family: 'Lato', sans-serif;
+    }
+}
+
 h2 {
     font-size: 6.2rem;
     color: $ice-blue;
-}
-
-.logo {
-    font-family: 'Playfair Display SC', serif;
-    font-style: italic;
-    font-size: 3.46rem;
-    color: $green-cyan;
 }
 
 a {
@@ -94,6 +117,26 @@ a:focus {
     border-bottom: 3px solid $light-blue;
 }
 
+.contact-us,
+.blog-header {
+        height: 100%;
+        display: flex;
+        align-items: center;
+}
+
+.main-title {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.home-header {
+    display: flex;
+    .main-title {
+        justify-content: flex-end;
+        padding-right: 10%;
+    }
+}
 
 .fa-bars {
     color: $ice-blue;
@@ -101,80 +144,41 @@ a:focus {
     font-size: 3rem;
 }
 
-
-
-// header styles
-
-@mixin custom-header-bg ($image-url) {
-    background: url($image-url);
-    height: 100vh;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+.logo {
+    font-family: 'Playfair Display SC', serif;
+    font-style: italic;
+    font-size: 3.46rem;
+    color: $green-cyan;
+}
+    
+.current-page {
+    color: $green-cyan;
 }
 
-header {
-    display: flex;
-     .current-page {
-        color: $green-cyan;
-    }
-    .header-content {
-        height: 100%;
-    }
+.header-content {
+    height: 100%;
+}
 
-    // navigator
-    nav {
+// navigator
+nav {
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    padding-top: 20px;
+    
+    ul {
         display: flex;
         justify-content: space-between;
-        text-transform: uppercase;
-        padding-top: 20px;
-        
-        ul {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
+        align-items: center;
     }
 }
-
-
 
 
 .home-header {
     @include custom-header-bg("../assets/home-image-1.jpg");
-
-    .main-title {
-        height: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: flex-end;
-        padding-right: 10%;
-        h1 {
-        font-weight: 700;
-        font-size: 11.12rem;
-        color: $twilight-blue;
-        z-index: 10;
-            span {
-                display: block;
-                text-transform: lowercase;
-                color: $spruce;
-                font-size: 6.2rem;
-                line-height: 5.8rem;
-                letter-spacing: 6.7;
-                font-family: 'Lato', sans-serif;
-            }
-        }
-    }
 }
 
-.contact-us,
-.blog-header {
-    .head-title {
-        height: 100%;
-        display: flex;
-        align-items: center;
-    }
-}
+
 
 .contact-us {
     @include custom-header-bg('../assets/contact-image-1.jpg');
@@ -187,7 +191,6 @@ header {
 
 .header-inset-image {
     width: 45%;
-    // height: 400px;
     position: absolute;
     bottom: -70px;
     left: -10px;
@@ -199,22 +202,69 @@ header {
 @media (max-width: 1024px) {
 
     h1 {
-        font-size: 8rem;
-    }
-    h1 span {
-            font-size: 5rem;
+        font-size: calc(11.2rem * .75);
+        span {
+            font-size: calc(6.2rem * .75);
+            line-height: calc(5.8rem * .75);
+            letter-spacing: calc(6.7 * .75);
         }
+    }
+
+    .home-header {        
+        .main-title {
+            justify-content: center;   
+            padding-right: 0;
+        }
+    }
 }
 
 // MEDIA QUERY 768PX
 // TABLETS
 @media (max-width: 768px) {
 
-    header nav li {
-        display: none;
+    h1 {
+        font-size: calc(11.2rem * .6);
+        span {
+            font-size: calc(6.2rem * .6);
+            line-height: calc(5.8rem * .6);
+            letter-spacing: calc(6.7 * .6);
+        }
     }
 
+    header li {
+        display: none;
+    }
+    
     .fa-bars {
-		display: block; /* make hamburger visible */
-	}
+        display: block; /* make hamburger visible */
+    }
+
+    .header-inset-image {
+        display: none;
+    }
+}
+
+// MEDIA QUERY 500PX
+// SMALL MOBILE
+
+@media (max-width: 500px) {
+
+    h1 {
+        font-size: calc(11.2rem * .4);
+        span {
+            font-size: calc(6.2rem * .4);
+            line-height: calc(5.8rem * .4);
+            letter-spacing: calc(6.7 * .4);
+        }
+    }
+
+    .home-header {        
+        .main-title {
+            justify-content: flex-start;   
+        }
+    }
+
+    .logo {
+        font-size: calc(3.46rem * .75);
+    }
 }
