@@ -290,9 +290,17 @@ h2 {
 }
 
 a {
-  padding: 30px;
+  padding: 5px 10px;
+  margin: 0  20px;
   text-decoration: none;
   color: #FAfffe;
+  line-height: 3rem;
+}
+
+a:hover,
+a:focus {
+  color: #D2F9F1;
+  border-bottom: 3px solid #D2F9F1;
 }
 
 .fa-bars {
@@ -307,7 +315,15 @@ header {
   display: flex;
 }
 
-nav {
+header .current-page {
+  color: #50E3C2;
+}
+
+header .header-content {
+  height: 100%;
+}
+
+header nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -318,7 +334,7 @@ nav {
   padding-top: 20px;
 }
 
-nav ul {
+header nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -328,10 +344,6 @@ nav ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.header-content {
-  height: 100%;
 }
 
 .home-header {
@@ -385,24 +397,11 @@ nav ul {
 }
 
 .contact-us {
-  background: url("../assets/banner-image.jpg");
+  background: url("../assets/contact-image-1.jpg");
   height: 100vh;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-}
-
-.contact-us .contact-title {
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 .blog-header {
