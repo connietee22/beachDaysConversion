@@ -221,9 +221,170 @@ textarea {
   overflow: hidden;
 }
 
+html {
+  font-size: 62.5%;
+}
+
+img {
+  width: 100%;
+}
+
+.skip-link {
+  position: absolute;
+  left: -1000px;
+  top: 5px;
+  z-index: 999;
+  background: white;
+  color: black;
+  font-size: 2rem;
+}
+
+.skip-link:focus {
+  left: 0;
+}
+
+.wrapper {
+  width: 90%;
+  max-width: 1250px;
+  margin: 0 auto;
+}
+
+h2,
+h3,
+h4,
+nav li,
+p,
+form {
+  font-family: 'Lato', sans-serif;
+}
+
+h1,
+button {
+  font-family: 'Playfair Display SC', serif;
+}
+
+h2,
+h3,
+h4,
+nav {
+  font-weight: 700;
+}
+
+nav,
+button,
+form,
+p {
+  font-size: 2rem;
+}
+
+.logo {
+  font-family: 'Playfair Display SC', serif;
+  font-style: italic;
+  font-size: 3.46rem;
+  color: #50E3C2;
+}
+
+a {
+  padding: 30px;
+  text-decoration: none;
+  color: #FAfffe;
+}
+
+.fa-bars {
+  color: #FAfffe;
+  display: none;
+  font-size: 3rem;
+}
+
 header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-transform: uppercase;
+  padding-top: 20px;
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header-content {
+  height: 100%;
+}
+
+.home-header {
   background: url("../assets/home-image-1.jpg");
   height: 100vh;
   background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.home-header .main-title {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding-right: 10%;
+}
+
+.home-header .main-title h1 {
+  font-weight: 700;
+  font-size: 11.12rem;
+  color: #063974;
+  z-index: 10;
+}
+
+.home-header .main-title h1 span {
+  display: block;
+  text-transform: lowercase;
+  color: #0C5F4C;
+  font-size: 6.2rem;
+  font-family: 'Lato', sans-serif;
+}
+
+.contact-us {
+  background: url("../assets/banner-image.jpg");
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.blog-header {
+  background: url("../assets/blog-image-1.jpg");
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.header-inset-image {
+  width: 45%;
+  position: absolute;
+  bottom: -70px;
+  left: -10px;
 }

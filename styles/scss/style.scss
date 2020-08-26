@@ -1,5 +1,22 @@
 @import "setup";
 
+// variables
+$twilight-blue: #063974;
+$green-cyan: #50E3C2;
+$black: #2c2c2c;
+$ice-blue: #FAfffe;
+$light-blue: #D2F9F1;
+$spruce: #0C5F4C;
+
+
+// general styles
+html {
+    font-size: 62.5%;
+}
+
+img {
+    width: 100%;
+}
 
 .skip-link {
 	position: absolute;
@@ -15,9 +32,135 @@
 	left: 0;
 }
 
-header {
-    background: url('../assets/home-image-1.jpg');
+.wrapper {
+    width: 90%;
+    max-width: 1250px;
+    margin: 0 auto;
+}
+
+// general font styles
+
+h2,
+h3,
+h4,
+nav li,
+p,
+form {
+    font-family: 'Lato', sans-serif;
+}
+
+h1,
+button {
+   font-family: 'Playfair Display SC', serif; 
+}
+
+h2,
+h3,
+h4,
+nav {
+    font-weight: 700;
+}
+
+nav,
+button,
+form,
+p {
+    font-size: 2rem;
+}
+
+.logo {
+    font-family: 'Playfair Display SC', serif;
+    font-style: italic;
+    font-size: 3.46rem;
+    color: $green-cyan;
+}
+
+a {
+    padding: 30px;
+    text-decoration: none;
+    color: $ice-blue;
+}
+
+.fa-bars {
+	color: $ice-blue;
+	display: none;
+	font-size: 3rem;
+}
+
+
+
+// header styles
+
+@mixin custom-header-bg ($image-url) {
+    background: url($image-url);
     height: 100vh;
     background-position: center;
     background-size: cover;
+    background-repeat: no-repeat;
 }
+
+header {
+    display: flex;
+}
+
+// navigator
+nav {
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    padding-top: 20px;
+    ul {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+
+.header-content {
+    height: 100%;
+}
+
+.home-header {
+    @include custom-header-bg("../assets/home-image-1.jpg");
+
+    .main-title {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        padding-right: 10%;
+        h1 {
+        font-weight: 700;
+        font-size: 11.12rem;
+        color: $twilight-blue;
+        z-index: 10;
+            span {
+                display: block;
+                text-transform: lowercase;
+                color: $spruce;
+                font-size: 6.2rem;
+                font-family: 'Lato', sans-serif;
+            }
+        }
+    }
+}
+
+.contact-us {
+    @include custom-header-bg('../assets/banner-image.jpg');
+}
+
+.blog-header {
+    @include custom-header-bg('../assets/blog-image-1.jpg');
+}
+
+.header-inset-image {
+    width: 45%;
+    // height: 400px;
+    position: absolute;
+    bottom: -70px;
+    left: -10px;
+}
+
+
+

@@ -14,28 +14,41 @@
 
 </head>
 <body>
+    <!-- skip link -->
     <a href="#main" class="skip-link">Skip to main content</a>
+
     <!-- HEADER SECTION -->
-    <header>
-        <p class="logo">Beach Stays</p>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="./blog.html">Blog</a></li>
-                <li><a href="./contact.html">Contact</a></li>
-            </ul>
-        </nav>
-        <h1>Welcome to <span>Beach Stays</span></h1>
-        
-        <!-- absolute positioned image over header at Desktop size-->
-        <img src="assets/header-box.jpg" alt="">
+    <header class="home-header">
+        <div class="wrapper header-content">
+            <!-- Navigation -->
+            <nav>
+                <div>
+                    <p class="logo">Beachstays</p>
+                </div>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="./blog.html">Blog</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
+                <!-- HAMBURGER MENU TO APPEAR AT 768PX -->
+                <i class="fa fa-bars"></i>
+            </nav>
+            <div class="main-title">
+                <h1><span>Welcome to</span>Beachstays</h1>
+            </div>
+            
+            <!-- absolute positioned image over header at Desktop size-->
+           <div class="header-inset-image">
+                <img src="assets/header-box.jpg" alt="sunglasses resting in sand">
+            </div> 
+        </div>
     </header>
     
     <!-- MAIN SECTION -->
     <section class="visit">
         
-        <h2>Visit Guyana</h2>
+        <h4>Visit Guyana</h4>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis nesciunt suscipit aperiam magnam necessitatibus nobis placeat explicabo eos iusto laboriosam ut vero quas sequi, atque modi laborum ea perferendis quidem aspernatur totam voluptatum nulla dolorem facilis corrupti. Dolorem, repudiandae! Optio labore reiciendis illo ipsa perferendis vitae aliquam voluptatum provident deleniti.</p>
         <button>Find out more</button>
         <img src="./assets/small-box.jpg" alt="beach house interior with view of water">
@@ -61,7 +74,7 @@
             <i class="fas fa-home"></i>
         </div>
             <div>    
-                <h3>Beach Houses</h3>
+                <h4>Beach Houses</h4>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro eos, explicabo vel necessitatibus assumenda doloremque.</p>
             </div>
         
@@ -69,7 +82,7 @@
             <i class="fas fa-file"></i>
         </div>
         <div>
-            <h3>Blog</h3>
+            <h4>Blog</h4>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia numquam aliquid blanditiis omnis quibusdam hic?</p>
         </div>
 
@@ -77,7 +90,7 @@
             <i class="fas fa-users"></i>
         </div>
         <div>
-            <h3>Community</h3>
+            <h4>Community</h4>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium non laudantium vitae quasi voluptatum tenetur!</p>
         </div>
 
@@ -85,7 +98,7 @@
             <i class="fas fa-phone"></i>
         </div>
         <div>
-            <h3>Get in Touch</h3>
+            <h4>Get in Touch</h4>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus quisquam temporibus, laudantium dolores hic odit?</p>
         </div> 
     </section>
