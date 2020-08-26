@@ -277,6 +277,11 @@ p {
   font-size: 2rem;
 }
 
+h2 {
+  font-size: 6.2rem;
+  color: #FAfffe;
+}
+
 .logo {
   font-family: 'Playfair Display SC', serif;
   font-style: italic;
@@ -363,7 +368,20 @@ nav ul {
   text-transform: lowercase;
   color: #0C5F4C;
   font-size: 6.2rem;
+  line-height: 5.8rem;
+  letter-spacing: 6.7;
   font-family: 'Lato', sans-serif;
+}
+
+.contact-us .head-title,
+.blog-header .head-title {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .contact-us {
@@ -372,6 +390,19 @@ nav ul {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+.contact-us .contact-title {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .blog-header {
@@ -387,4 +418,23 @@ nav ul {
   position: absolute;
   bottom: -70px;
   left: -10px;
+}
+
+@media (max-width: 1024px) {
+  h1 {
+    font-size: 8rem;
+  }
+  h1 span {
+    font-size: 5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  header nav li {
+    display: none;
+  }
+  .fa-bars {
+    display: block;
+    /* make hamburger visible */
+  }
 }

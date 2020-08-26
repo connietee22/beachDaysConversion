@@ -68,6 +68,11 @@ p {
     font-size: 2rem;
 }
 
+h2 {
+    font-size: 6.2rem;
+    color: $ice-blue;
+}
+
 .logo {
     font-family: 'Playfair Display SC', serif;
     font-style: italic;
@@ -86,6 +91,7 @@ a {
 	display: none;
 	font-size: 3rem;
 }
+
 
 
 
@@ -140,19 +146,40 @@ nav {
                 text-transform: lowercase;
                 color: $spruce;
                 font-size: 6.2rem;
+                line-height: 5.8rem;
+                letter-spacing: 6.7;
                 font-family: 'Lato', sans-serif;
             }
         }
     }
 }
 
+.contact-us,
+.blog-header {
+    .head-title {
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+}
+
 .contact-us {
     @include custom-header-bg('../assets/banner-image.jpg');
+
+    .contact-title {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }
 
 .blog-header {
     @include custom-header-bg('../assets/blog-image-1.jpg');
+    
 }
+
+
 
 .header-inset-image {
     width: 45%;
@@ -163,4 +190,27 @@ nav {
 }
 
 
+// MEDIA QUERY 1024PX
+// DESKTOP, SMALL LAPTOPS
+@media (max-width: 1024px) {
+   
+    h1 {
+        font-size: 8rem;
+    }
+    h1 span {
+            font-size: 5rem;
+        }
+}
 
+// MEDIA QUERY 768PX
+// TABLETS
+@media (max-width: 768px) {
+
+    header nav li {
+        display: none;
+    }
+
+    .fa-bars {
+		display: block; /* make hamburger visible */
+	}
+}
