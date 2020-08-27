@@ -47,7 +47,8 @@ h3,
 h4,
 nav li,
 p,
-form {
+input,
+textarea {
     font-family: 'Lato', sans-serif;
 }
 
@@ -152,6 +153,7 @@ button {
 @mixin custom-header-bg ($image-url) {
     background: url($image-url);
     height: 100vh;
+    min-height: 550px;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -303,7 +305,6 @@ nav {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    // justify-content: center;
 }
 
 .icon-text-container {
@@ -311,12 +312,6 @@ nav {
     margin-right: 25px;
     display: flex;
 }
-
-// .extra-text {
-//     display: flex;
-//     flex-direction: column;
-// }
-
 
 
 // HOME - offers section
@@ -344,27 +339,49 @@ footer {
 // CONTACT PAGE
 
 .contact-form {
-    display: flex;
-    position: absolute;
+    background: $ice-blue;
 }
 
-.form {
+.form-container {
+    position: relative;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #fff;
+    width: 60%;
     padding: 70px 30px 30px;
     box-shadow: 20px 20px grey;
     margin-right: 50px;
+    position: absolute;
     width: 60%;
-    top: -150;
+    top: -150px;
     left: 0;
 }
 
 input,
 textarea {
-    margin: 0 40px 40px;
+    padding: 20px;
+    margin-bottom: 40px;
+    border-style: none;
+}
+
+input {
+    border-bottom: 2px solid $green-cyan;
+    width: calc((100% - 20px) / 2);
+    margin-right: 20px
+}
+
+[type="email"] {
+    margin-right: 0;
 }
 
 textarea {
     resize: none;
     width: 100%;
+    border: 2px solid $green-cyan;
 }
 
 button[type="submit"] {
@@ -402,6 +419,11 @@ button[type="submit"] {
             justify-content: center;   
             padding-right: 0;
         }
+    }
+
+    // 1024px CONTACT US - form section
+    input {
+        width: 100%;
     }
 }
 

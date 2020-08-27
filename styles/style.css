@@ -256,7 +256,8 @@ h3,
 h4,
 nav li,
 p,
-form {
+input,
+textarea {
   font-family: 'Lato', sans-serif;
 }
 
@@ -358,6 +359,7 @@ button a {
 .home-header {
   background: url("../assets/home-image-1.jpg");
   height: 100vh;
+  min-height: 550px;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -366,6 +368,7 @@ button a {
 .contact-us {
   background: url("../assets/contact-image-1.jpg");
   height: 100vh;
+  min-height: 550px;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -374,6 +377,7 @@ button a {
 .blog-header {
   background: url("../assets/blog-image-1.jpg");
   height: 100vh;
+  min-height: 550px;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -570,30 +574,55 @@ footer {
 }
 
 .contact-form {
+  background: #FAfffe;
+}
+
+.form-container {
+  position: relative;
+}
+
+form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  position: absolute;
-}
-
-.form {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #fff;
+  width: 60%;
   padding: 70px 30px 30px;
   -webkit-box-shadow: 20px 20px grey;
           box-shadow: 20px 20px grey;
   margin-right: 50px;
+  position: absolute;
   width: 60%;
-  top: -150;
+  top: -150px;
   left: 0;
 }
 
 input,
 textarea {
-  margin: 0 40px 40px;
+  padding: 20px;
+  margin-bottom: 40px;
+  border-style: none;
+}
+
+input {
+  border-bottom: 2px solid #50E3C2;
+  width: calc((100% - 20px) / 2);
+  margin-right: 20px;
+}
+
+[type="email"] {
+  margin-right: 0;
 }
 
 textarea {
   resize: none;
   width: 100%;
+  border: 2px solid #50E3C2;
 }
 
 button[type="submit"] {
@@ -632,6 +661,9 @@ button[type="submit"] {
         -ms-flex-pack: center;
             justify-content: center;
     padding-right: 0;
+  }
+  input {
+    width: 100%;
   }
 }
 
