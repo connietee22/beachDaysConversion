@@ -227,6 +227,8 @@ html {
 
 img {
   width: 100%;
+  height: auto;
+  display: block;
 }
 
 .skip-link {
@@ -299,7 +301,64 @@ h2 {
   color: #FAfffe;
 }
 
-a {
+h3 {
+  font-size: 3.5rem;
+  letter-spacing: 3.8px;
+  line-height: 5.8rem;
+}
+
+p {
+  line-height: 3.2rem;
+  letter-spacing: 2px;
+  margin-bottom: 15px;
+}
+
+section:nth-child(odd) {
+  background: #FAfffe;
+}
+
+section:nth-child(even) {
+  background: #D2F9F1;
+}
+
+button {
+  background: #063974;
+}
+
+button a {
+  line-height: 3.4rem;
+  letter-spacing: 1;
+  color: #FAfffe;
+  text-decoration: none;
+  padding: 0px 10px;
+}
+
+.home-header {
+  background: url("../assets/home-image-1.jpg");
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.contact-us {
+  background: url("../assets/contact-image-1.jpg");
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.blog-header {
+  background: url("../assets/blog-image-1.jpg");
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+header a {
   padding: 5px 10px;
   margin: 0  20px;
   text-decoration: none;
@@ -307,8 +366,8 @@ a {
   line-height: 3rem;
 }
 
-a:hover,
-a:focus {
+header a:hover,
+header a:focus {
   color: #D2F9F1;
   border-bottom: 3px solid #D2F9F1;
 }
@@ -377,6 +436,8 @@ nav {
           justify-content: space-between;
   text-transform: uppercase;
   padding-top: 20px;
+  line-height: 2.9rem;
+  letter-spacing: 1;
 }
 
 nav ul {
@@ -391,35 +452,92 @@ nav ul {
           align-items: center;
 }
 
-.home-header {
-  background: url("../assets/home-image-1.jpg");
-  height: 100vh;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.contact-us {
-  background: url("../assets/contact-image-1.jpg");
-  height: 100vh;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.blog-header {
-  background: url("../assets/blog-image-1.jpg");
-  height: 100vh;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
 .header-inset-image {
   width: 45%;
+  max-width: 800px;
   position: absolute;
   bottom: -70px;
   left: -10px;
+}
+
+.visit {
+  padding: 120px 0 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.visit-flex-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.visit-summary {
+  width: calc(75% - 50px);
+  padding-right: 50px;
+  -webkit-box-ordinal-group: 0;
+      -ms-flex-order: -1;
+          order: -1;
+}
+
+.visit-guyana-image {
+  -webkit-box-shadow: 10px 10px #50E3C2;
+          box-shadow: 10px 10px #50E3C2;
+}
+
+.contact-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+}
+
+.form {
+  padding: 70px 30px 30px;
+  -webkit-box-shadow: 20px 20px grey;
+          box-shadow: 20px 20px grey;
+  margin-right: 50px;
+  width: 60%;
+  top: -150;
+  left: 0;
+}
+
+input,
+textarea {
+  margin: 0 40px 40px;
+}
+
+textarea {
+  resize: none;
+  width: 100%;
+}
+
+button[type="submit"] {
+  width: 100%;
+}
+
+.contact-info {
+  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 100px 30px;
+}
+
+.socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 @media (max-width: 1024px) {
@@ -455,8 +573,45 @@ nav ul {
     display: block;
     /* make hamburger visible */
   }
+  .visit {
+    padding-top: 60px;
+  }
+  .visit-flex-container {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .visit-images-flex-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .visit-summary {
+    -webkit-box-ordinal-group: 1;
+        -ms-flex-order: 0;
+            order: 0;
+    width: 100%;
+    text-align: center;
+    padding: 30px 0 0;
+  }
   .header-inset-image {
-    display: none;
+    position: static;
+  }
+  .header-inset-image,
+  .visit-guyana-image {
+    width: calc((100% - 10px) / 2);
+    margin-right: 10px;
+    height: 330px;
+  }
+  .header-inset-image img,
+  .visit-guyana-image img {
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .visit-guyana-image {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    margin-right: 0;
   }
 }
 
@@ -476,5 +631,15 @@ nav ul {
   }
   .logo {
     font-size: calc(3.46rem * .75);
+  }
+  .header-inset-image {
+    display: none;
+  }
+  .visit-guyana-image {
+    width: 100%;
+  }
+  .visit-guyana-image img {
+    -o-object-fit: fit;
+       object-fit: fit;
   }
 }
