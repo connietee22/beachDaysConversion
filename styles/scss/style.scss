@@ -141,6 +141,7 @@ button {
     height: 30px;
     width: 30px;
     border-radius: 15px;
+    align-items: center;
 }
 
 
@@ -300,19 +301,21 @@ nav {
 // HOME - extra info section
 .extra-info {
     display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    // justify-content: center;
 }
 
 .icon-text-container {
-    width: calc((100% - 25px) / 2);
+    width: calc((100% - 50px) / 2);
     margin-right: 25px;
     display: flex;
 }
 
-.extra-text {
-    width: 200px;
-    display: flex;
-    flex-direction: column;
-}
+// .extra-text {
+//     display: flex;
+//     flex-direction: column;
+// }
 
 
 
