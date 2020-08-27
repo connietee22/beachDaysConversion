@@ -98,12 +98,21 @@ h3 {
     line-height: 5.8rem;
 }
 
+h4 {
+    font-size: 3.0rem;
+    line-height: 5.8rem;
+    letter-spacing: 3.2px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 p {
     line-height: 3.2rem;
     letter-spacing: 2px;
-    margin-bottom: 15px;
 }
-
 
 section:nth-child(odd) {
     background: $ice-blue;
@@ -124,6 +133,17 @@ button {
         padding: 0px 10px;
     }
 }
+
+.icon {
+    font-size: 2.0rem;
+    color: $ice-blue;
+    background-color: $green-cyan;
+    height: 30px;
+    width: 30px;
+    border-radius: 15px;
+}
+
+
 
 
 // header styles
@@ -155,7 +175,6 @@ header {
     a {
         padding: 5px 10px;
         margin: 0  20px;
-        text-decoration: none;
         color: $ice-blue;
         line-height: 3rem;
     }
@@ -253,6 +272,9 @@ nav {
     width: calc(75% - 50px);
     padding-right: 50px;
     order: -1;
+    p {
+        margin-bottom: 15px;
+    }
 }
 
 .visit-guyana-image {
@@ -275,9 +297,45 @@ nav {
     }
 }
 
+// HOME - extra info section
+.extra-info {
+    display: flex;
+}
+
+.icon-text-container {
+    width: calc((100% - 25px) / 2);
+    margin-right: 25px;
+    display: flex;
+}
+
+.extra-text {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+}
 
 
 
+// HOME - offers section
+
+.offers-image {
+    width: 100%;
+    height: 300px;
+    margin-bottom: 250px;
+}
+
+.offers-text {
+    width: 60%;
+    text-align: center;
+    margin: 0 auto 60px;
+}
+
+// HOME - footer section
+footer {
+    background-color: #2c2c2c;
+    color: #fff;
+    text-align: center;
+}
 
 
 // CONTACT PAGE
@@ -423,7 +481,7 @@ button[type="submit"] {
 
 @media (max-width: 500px) {
 
-     .logo {
+    .logo {
         font-size: calc(3.46rem * .75);
     }
 
