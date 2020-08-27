@@ -374,7 +374,6 @@ header a:focus {
 
 .contact-us,
 .blog-header {
-  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -491,6 +490,24 @@ nav ul {
           box-shadow: 10px 10px #50E3C2;
 }
 
+.gallery {
+  padding: 60px 0 60px;
+}
+
+.gallery-flex-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.gallery-flex-container li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .contact-form {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -598,8 +615,8 @@ button[type="submit"] {
   }
   .header-inset-image,
   .visit-guyana-image {
-    width: calc((100% - 10px) / 2);
-    margin-right: 10px;
+    width: calc((100% - 20px) / 2);
+    margin-right: 20px;
     height: 330px;
   }
   .header-inset-image img,
@@ -613,9 +630,19 @@ button[type="submit"] {
             box-shadow: none;
     margin-right: 0;
   }
+  .gallery-flex-container {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+  .gallery-flex-container li:last-child {
+    display: none;
+  }
 }
 
 @media (max-width: 500px) {
+  .logo {
+    font-size: calc(3.46rem * .75);
+  }
   h1 {
     font-size: calc(11.2rem * .4);
   }
@@ -629,9 +656,6 @@ button[type="submit"] {
         -ms-flex-pack: start;
             justify-content: flex-start;
   }
-  .logo {
-    font-size: calc(3.46rem * .75);
-  }
   .header-inset-image {
     display: none;
   }
@@ -641,5 +665,9 @@ button[type="submit"] {
   .visit-guyana-image img {
     -o-object-fit: fit;
        object-fit: fit;
+  }
+  .gallery-flex-container {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
   }
 }

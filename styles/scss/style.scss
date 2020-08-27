@@ -126,7 +126,6 @@ button {
 }
 
 
-
 // header styles
 
 @mixin custom-header-bg ($image-url) {
@@ -152,7 +151,6 @@ button {
     position: relative;
 }
 
-
 header {
     a {
         padding: 5px 10px;
@@ -171,7 +169,7 @@ header {
 
 .contact-us,
 .blog-header {
-        height: 100%;
+        // height: 100%;
         display: flex;
         align-items: center;
 }
@@ -228,8 +226,6 @@ nav {
     }
 }
 
-
-
 .header-inset-image {
     width: 45%;
     max-width: 800px;
@@ -239,7 +235,7 @@ nav {
 }
 
 
-// VISIT GUYANA SECTION 
+// HOME - visit guyana section
 
 .visit {
     padding: 120px 0 60px;
@@ -261,6 +257,25 @@ nav {
 .visit-guyana-image {
     box-shadow: 10px 10px $green-cyan;
 }
+
+// HOME - gallery section 
+
+.gallery {
+    padding: 60px 0 60px;
+}
+
+.gallery-flex-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    // grid-template-rows: 275px;
+    gap: 25px;
+    li {
+        display: flex;
+    }
+}
+
+
+
 
 
 
@@ -332,6 +347,7 @@ button[type="submit"] {
 // TABLETS
 @media (max-width: 768px) {
 
+    // 768px HEADER STYLES 
     h1 {
         font-size: calc(11.2rem * .6);
         span {
@@ -349,6 +365,7 @@ button[type="submit"] {
         display: block; /* make hamburger visible */
     }
 
+    // 768px HOME - visit section
     .visit {
         padding-top: 60px;
     }
@@ -368,15 +385,14 @@ button[type="submit"] {
         padding: 30px 0 0;
     }
 
-    // swinging inset image down beside visit guyana image
     .header-inset-image {
-        position: static;
+        position: static; // swinging inset image down beside visit guyana image
     }
 
     .header-inset-image,
     .visit-guyana-image {
-        width: calc((100% - 10px) / 2);
-        margin-right: 10px;
+        width: calc((100% - 20px) / 2);
+        margin-right: 20px;
         height: 330px;
         img {
             height: 100%;
@@ -388,6 +404,17 @@ button[type="submit"] {
         box-shadow: none;
         margin-right: 0;
     }
+
+    // 768px HOME - gallery section
+    .gallery-flex-container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .gallery-flex-container {
+        li:last-child {
+            display: none;
+        }
+    }
 }
 
 // MEDIA QUERY 500PX
@@ -395,6 +422,11 @@ button[type="submit"] {
 
 @media (max-width: 500px) {
 
+     .logo {
+        font-size: calc(3.46rem * .75);
+    }
+
+    // 500px - HOME - header
     h1 {
         font-size: calc(11.2rem * .4);
         span {
@@ -410,11 +442,7 @@ button[type="submit"] {
         }
     }
 
-    .logo {
-        font-size: calc(3.46rem * .75);
-    }
-
-    // 500px VISIT SECTION
+    // 500px HOME - visit section
     .header-inset-image {
         display: none;
     }
@@ -425,6 +453,11 @@ button[type="submit"] {
             // height: 100%;
             object-fit: fit;
         }
+    }
+
+    // 500px HOME - gallery section
+    .gallery-flex-container {
+        grid-template-columns: 1fr;
     }
 
 }
