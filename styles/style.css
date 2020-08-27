@@ -416,6 +416,7 @@ header a:focus {
   font-style: italic;
   font-size: 3.46rem;
   color: #50E3C2;
+  margin: 0;
 }
 
 .current-page {
