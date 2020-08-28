@@ -90,6 +90,7 @@ h1 {
 
 h2 {
     font-size: 6.2rem;
+    letter-spacing: 9px;
     color: $ice-blue;
 }
 
@@ -397,7 +398,7 @@ button[type="submit"] {
     float: right;
     width: calc(40% - 40px);
     margin-left: 40px;
-    padding: 100px 50px;
+    padding: 100px 50px 150px;
 }
 
 .socials {
