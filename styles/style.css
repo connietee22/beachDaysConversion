@@ -312,7 +312,7 @@ h3 {
 
 h4 {
   font-size: 3.0rem;
-  line-height: 5.8rem;
+  line-height: 4rem;
   letter-spacing: 3.2px;
 }
 
@@ -347,15 +347,22 @@ button a {
 }
 
 .icon {
-  font-size: 2.0rem;
-  color: #FAfffe;
-  background-color: #50E3C2;
-  height: 30px;
-  width: 30px;
-  border-radius: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #FAfffe;
+  background-color: #50E3C2;
+  font-size: 20px;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  margin-right: 15px;
 }
 
 form {
@@ -558,14 +565,24 @@ nav ul {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   width: 100%;
+  padding: 75px 0;
+  -webkit-box-align: space-around;
+      -ms-flex-align: space-around;
+          align-items: space-around;
 }
 
 .icon-text-container {
-  width: calc((100% - 50px) / 2);
-  margin-right: 25px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 50%;
+  margin-bottom: 25px;
+}
+
+.extra-text {
+  width: 80%;
 }
 
 .offers-image {
