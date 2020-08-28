@@ -358,6 +358,18 @@ button a {
           align-items: center;
 }
 
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #fff;
+}
+
 .home-header {
   background: url("../assets/home-image-1.jpg");
   height: 100vh;
@@ -383,7 +395,6 @@ button a {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  position: relative;
 }
 
 header a {
@@ -575,7 +586,7 @@ footer {
   text-align: center;
 }
 
-.contact-form {
+.contact-main {
   background: #FAfffe;
 }
 
@@ -583,16 +594,7 @@ footer {
   position: relative;
 }
 
-form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  background-color: #fff;
+.contact-form {
   width: 60%;
   padding: 70px 50px 50px;
   -webkit-box-shadow: 20px 20px grey;
@@ -758,7 +760,7 @@ button[type="submit"] {
   .gallery-flex-container li:last-child {
     display: none;
   }
-  form {
+  .contact-form {
     position: static;
     width: 100%;
   }

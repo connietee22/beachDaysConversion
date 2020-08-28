@@ -147,6 +147,12 @@ button {
     align-items: center;
 }
 
+form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #fff;
+}
 
 
 
@@ -173,7 +179,6 @@ button {
 
 .blog-header {
     @include custom-header-bg('../assets/blog-image-1.jpg');
-    position: relative;
 }
 
 header {
@@ -339,20 +344,15 @@ footer {
 
 // CONTACT PAGE
 
-.contact-form {
+.contact-main {
     background: $ice-blue;
 }
 
 .form-container {
     position: relative;
-    // display: flex;
 }
 
-form {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    background-color: #fff;
+.contact-form {
     width: 60%;
     padding: 70px 50px 50px;
     box-shadow: 20px 20px grey;
@@ -533,7 +533,7 @@ button[type="submit"] {
 
     //768px CONTACT - form section
 
-    form {
+    .contact-form {
         position: static; // brings form back into section
         width: 100%;
     }
@@ -560,10 +560,10 @@ button[type="submit"] {
         font-size: calc(3.46rem * .75);
     }
 
-     h2 {
-    font-size: calc(6.2rem * .6);
-    letter-spacing: calc(9px * .6);
-    line-height: calc(5.8rem * .6);
+    h2 {
+        font-size: calc(6.2rem * .6);
+        letter-spacing: calc(9px * .6);
+        line-height: calc(5.8rem * .6);
     }
 
     // 500px - HOME - header
@@ -600,9 +600,5 @@ button[type="submit"] {
         grid-template-columns: 1fr;
     }
 
-
-    // 500px CONTACT - form section
-
-    
 
 }
