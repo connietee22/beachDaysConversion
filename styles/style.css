@@ -592,10 +592,9 @@ form {
           justify-content: space-between;
   background-color: #fff;
   width: 60%;
-  padding: 70px 30px 30px;
+  padding: 70px 50px 50px;
   -webkit-box-shadow: 20px 20px grey;
           box-shadow: 20px 20px grey;
-  margin-right: 50px;
   position: absolute;
   width: 60%;
   top: -150px;
@@ -627,10 +626,13 @@ textarea {
 
 button[type="submit"] {
   width: 100%;
+  line-height: 3.2px;
+  letter-spacing: 1;
+  color: #FAfffe;
+  padding: 20px;
 }
 
 .contact-info {
-  width: 40%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -638,13 +640,25 @@ button[type="submit"] {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 100px 30px;
+  float: right;
+  width: calc(40% - 40px);
+  margin-left: 40px;
+  padding: 100px 50px;
 }
 
 .socials {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  font-size: 2.5rem;
+}
+
+.socials li {
+  padding-right: 20px;
+}
+
+.socials li:last-child {
+  padding-right: 0;
 }
 
 @media (max-width: 1024px) {
@@ -664,6 +678,13 @@ button[type="submit"] {
   }
   input {
     width: 100%;
+    margin-right: 0;
+  }
+  input:first-child {
+    margin-bottom: 20px;
+  }
+  .contact-info {
+    padding: 150px 30px;
   }
 }
 
@@ -729,6 +750,22 @@ button[type="submit"] {
   }
   .gallery-flex-container li:last-child {
     display: none;
+  }
+  form {
+    position: static;
+    width: 100%;
+  }
+  .contact-info {
+    float: none;
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    padding: 75px 0px 50px;
+  }
+  .socials {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 

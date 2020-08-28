@@ -45,43 +45,48 @@
 
     <main>
         <section class="contact-form">
-            <div class="wrapper form-container">
+
+            <div class="wrapper form-container clearfix">
                 <form>
-                    <label for="name"></label>
+                    <label for="name" class="sr-only">Name</label>
                     <input type="text" id="name" name="name" placeholder="Name">
-                    <label for="email"></label>
+                    <label for="email" class="sr-only">Email Address</label>
                     <input type="email" id="email" required placeholder="Email address">
-                    <textarea name="message" cols="30" rows="10" placeholder="Message"></textarea>
+                    <label for="message" class="sr-only">Message Box</label>
+                    <textarea name="message" id="message" rows="5" placeholder="Message"></textarea>
                     <button type="submit">Submit</button>
                 </form>
-            </div>
-            <div class="contact-info">
-                <ul class="socials">
-                    <li>
-                        <a href="#" aria-label="facebook page">
-                            <i aria-hidden="true" class="fab fa-facebook-f"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" aria-label="instagram profile">
-                            <i aria-hidden="true" class="fab fa-instagram shadows"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" aria-label="twitter profile">
-                            <i aria-hidden="true" class="fab fa-twitter"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" aria-label="whatsapp"></a>
-                        <i class="fab fa-whatsapp"></i>
-                    </li>
-                </ul>
-                <p><a href="mailto:info@email.com">info@email.com</a></p>
-                <p>123 Queen Street West</p>
-                <p>Unit 10</p>
-                <p>Toronto, Ontario</p>
-                <p>M5V 2D5</p>
+                
+                <div class="contact-info">
+                    <ul class="socials">
+                        <li>
+                            <a href="#" aria-label="facebook page">
+                                <i aria-hidden="true" class="fab fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" aria-label="instagram profile">
+                                <i aria-hidden="true" class="fab fa-instagram shadows"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" aria-label="twitter profile">
+                                <i aria-hidden="true" class="fab fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" aria-label="whatsapp"></a>
+                            <i class="fab fa-whatsapp"></i>
+                        </li>
+                    </ul>
+                    <p><a href="mailto:info@email.com">info@email.com</a></p>
+                    <address>
+                    <p>123 Queen Street West</p>
+                    <p>Unit 10</p>
+                    <p>Toronto, Ontario</p>
+                    <p>M5V 2D5</p>
+                    </address>
+                </div>
             </div>
         </section>
     </main>
