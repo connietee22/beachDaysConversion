@@ -346,25 +346,6 @@ button a {
   padding: 0px 10px;
 }
 
-.icon {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  color: #FAfffe;
-  background-color: #50E3C2;
-  font-size: 20px;
-  height: 40px;
-  width: 40px;
-  border-radius: 50%;
-  margin-right: 15px;
-}
-
 form {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -566,9 +547,32 @@ nav ul {
       flex-wrap: wrap;
   width: 100%;
   padding: 75px 0;
-  -webkit-box-align: space-around;
-      -ms-flex-align: space-around;
-          align-items: space-around;
+  -webkit-box-align: space-between;
+      -ms-flex-align: space-between;
+          align-items: space-between;
+}
+
+.extra-info .icon-text-container:last-child {
+  margin-bottom: 0;
+}
+
+.icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #FAfffe;
+  background-color: #50E3C2;
+  font-size: 20px;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  margin-right: 15px;
 }
 
 .icon-text-container {
@@ -578,11 +582,11 @@ nav ul {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   width: 50%;
-  margin-bottom: 25px;
+  margin-bottom: 50px;
 }
 
 .extra-text {
-  width: 80%;
+  width: calc(100% - 55px);
 }
 
 .offers-image {
@@ -776,6 +780,16 @@ button[type="submit"] {
   }
   .gallery-flex-container li:last-child {
     display: none;
+  }
+  .extra-info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .icon-text-container {
+    width: 100%;
+    margin-bottom: 50px;
   }
   .contact-form {
     position: static;
