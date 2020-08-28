@@ -91,6 +91,7 @@ h1 {
 h2 {
     font-size: 6.2rem;
     letter-spacing: 9px;
+    line-height: 5.8rem;
     color: $ice-blue;
 }
 
@@ -465,6 +466,12 @@ button[type="submit"] {
         }
     }
 
+    h2 {
+    font-size: calc(6.2rem * .8);
+    letter-spacing: calc(9px * .8);
+    line-height: calc(5.8rem * .8);
+    }
+
     header li {
         display: none;
     }
@@ -551,6 +558,12 @@ button[type="submit"] {
 
     .logo {
         font-size: calc(3.46rem * .75);
+    }
+
+     h2 {
+    font-size: calc(6.2rem * .6);
+    letter-spacing: calc(9px * .6);
+    line-height: calc(5.8rem * .6);
     }
 
     // 500px - HOME - header

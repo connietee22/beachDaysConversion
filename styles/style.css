@@ -300,6 +300,7 @@ h1 span {
 h2 {
   font-size: 6.2rem;
   letter-spacing: 9px;
+  line-height: 5.8rem;
   color: #FAfffe;
 }
 
@@ -698,6 +699,11 @@ button[type="submit"] {
     line-height: calc(5.8rem * .6);
     letter-spacing: calc(6.7 * .6);
   }
+  h2 {
+    font-size: calc(6.2rem * .8);
+    letter-spacing: calc(9px * .8);
+    line-height: calc(5.8rem * .8);
+  }
   header li {
     display: none;
   }
@@ -773,6 +779,11 @@ button[type="submit"] {
 @media (max-width: 500px) {
   .logo {
     font-size: calc(3.46rem * .75);
+  }
+  h2 {
+    font-size: calc(6.2rem * .6);
+    letter-spacing: calc(9px * .6);
+    line-height: calc(5.8rem * .6);
   }
   h1 {
     font-size: calc(11.2rem * .4);
