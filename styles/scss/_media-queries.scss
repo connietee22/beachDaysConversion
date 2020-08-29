@@ -276,6 +276,16 @@
 
 @media (max-width: 500px) {
 
+    // 500px GENERAL styles
+    h1 {
+        font-size: calc(11.2rem * .4);
+        span {
+            font-size: calc(6.2rem * .4);
+            line-height: calc(5.8rem * .4);
+            letter-spacing: calc(6.7 * .4);
+        }
+    }
+
     .logo {
         font-size: calc(3.46rem * .75);
     }
@@ -286,16 +296,8 @@
         line-height: calc(5.8rem * .6);
     }
 
-    // 500px - HOME - header
-    h1 {
-        font-size: calc(11.2rem * .4);
-        span {
-            font-size: calc(6.2rem * .4);
-            line-height: calc(5.8rem * .4);
-            letter-spacing: calc(6.7 * .4);
-        }
-    }
-
+    // 500px HOME - header
+    
     .home-header {        
         .main-title {
             justify-content: flex-start;   
@@ -305,7 +307,7 @@
     // 500px HOME - visit section
     .header-inset-image {
         display: none;
-    }
+    } // remove sunglasses image completely
 
     .visit-guyana-image {
         width: 100%;

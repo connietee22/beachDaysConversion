@@ -452,7 +452,7 @@ article {
 }
 
 .blog {
-  background-color: #FAfffe;
+  background: #FAfffe;
   padding: 60px 0px;
 }
 
@@ -821,14 +821,6 @@ aside .find-more {
 }
 
 @media (max-width: 500px) {
-  .logo {
-    font-size: calc(3.46rem * .75);
-  }
-  h2 {
-    font-size: calc(6.2rem * .6);
-    letter-spacing: calc(9px * .6);
-    line-height: calc(5.8rem * .6);
-  }
   h1 {
     font-size: calc(11.2rem * .4);
   }
@@ -836,6 +828,14 @@ aside .find-more {
     font-size: calc(6.2rem * .4);
     line-height: calc(5.8rem * .4);
     letter-spacing: calc(6.7 * .4);
+  }
+  .logo {
+    font-size: calc(3.46rem * .75);
+  }
+  h2 {
+    font-size: calc(6.2rem * .6);
+    letter-spacing: calc(9px * .6);
+    line-height: calc(5.8rem * .6);
   }
   .home-header .main-title {
     -webkit-box-pack: start;
