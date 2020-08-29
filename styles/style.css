@@ -650,7 +650,7 @@ article {
 .offers-text {
   width: 60%;
   text-align: center;
-  margin: 0 auto 60px;
+  margin: 0 auto 70px;
 }
 
 footer {
@@ -739,16 +739,29 @@ button[type="submit"] {
 }
 
 @media (max-width: 1250px) {
-  article {
-    padding: 60px 0;
+  .article-text-1 {
+    padding: 50px 0 100px;
+  }
+  .article-text-2 {
+    padding: 100px 0 50px;
   }
   .article-container {
     width: 90%;
-    padding: 60px 0;
+    margin-right: 60px;
+  }
+  .article-container:last-child {
+    margin-right: 0px;
   }
   .article-img1,
   .article-img2 {
     position: static;
+    height: 375px;
+  }
+  .article-img1 img,
+  .article-img2 img {
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   .article-img1 {
     margin-top: 50px;
