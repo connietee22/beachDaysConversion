@@ -23,6 +23,7 @@ $spruce: #0C5F4C;
 .blog-header {
     @include custom-header-bg('../assets/blog-image-1.jpg');
 }
+
 .contact-us {
     @include custom-header-bg('../assets/contact-image-1.jpg');
 }

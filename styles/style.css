@@ -452,7 +452,7 @@ article {
 }
 
 .blog {
-  background: #FAfffe;
+  background-color: #FAfffe;
   padding: 60px 0px;
 }
 
@@ -684,6 +684,25 @@ aside .find-more {
     letter-spacing: calc(9px * .8);
     line-height: calc(5.8rem * .8);
   }
+  h3 {
+    font-size: calc(3.5rem * .8);
+    letter-spacing: calc(3.8px * .8);
+    line-height: calc(5.8rem * .8);
+  }
+  h4 {
+    font-size: calc(3.0rem * .8);
+    line-height: calc(5.8rem * .8);
+    letter-spacing: calc(3.2px * .8);
+  }
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  p,
+  .blog li {
+    line-height: calc(3.2rem * .8);
+    letter-spacing: calc(2px * .8);
+  }
   header li {
     display: none;
   }
@@ -692,7 +711,7 @@ aside .find-more {
     /* make hamburger visible */
   }
   .visit {
-    padding-top: 60px;
+    padding: 50px 0px;
   }
   .visit-flex-container {
     -ms-flex-wrap: wrap;
@@ -731,6 +750,9 @@ aside .find-more {
             box-shadow: none;
     margin-right: 0;
   }
+  .gallery {
+    padding: 50px 0px;
+  }
   .gallery-flex-container {
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
@@ -743,6 +765,7 @@ aside .find-more {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    padding: 50px 0px;
   }
   .icon-text-container {
     width: 100%;
