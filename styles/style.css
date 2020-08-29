@@ -738,6 +738,37 @@ button[type="submit"] {
   padding-right: 0;
 }
 
+.blog-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 60%;
+  position: relative;
+  top: -150px;
+}
+
+.blog-article-image {
+  -webkit-box-shadow: 15px 15px #50E3C2;
+          box-shadow: 15px 15px #50E3C2;
+  position: relative;
+  left: -15px;
+}
+
+.blog-article-text {
+  border: 2px solid #50E3C2;
+  padding: 40px 40px 40px 500px;
+  border-top-style: none;
+  margin-left: -500px;
+}
+
+aside {
+  float: right;
+}
+
 @media (max-width: 1250px) {
   .article-text-1 {
     padding: 50px 0 100px;
