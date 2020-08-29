@@ -11,10 +11,6 @@
 }
 
 .home-header {
-    @include custom-header-bg("../assets/home-image-1.jpg");
-}
-
-.home-header {
     display: flex;
     .main-title {
         justify-content: flex-end;
