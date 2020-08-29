@@ -48,7 +48,8 @@ h4,
 nav li,
 p,
 input,
-textarea {
+textarea,
+.blog ul {
     font-family: 'Lato', sans-serif;
 }
 
@@ -67,7 +68,8 @@ nav {
 nav,
 button,
 form,
-p {
+p,
+.blog ul {
     font-size: 2rem;
 }
 
@@ -103,7 +105,7 @@ h3 {
 
 h4 {
     font-size: 3.0rem;
-    line-height: 4rem;
+    line-height: 5.8rem;
     letter-spacing: 3.2px;
 }
 
@@ -112,7 +114,8 @@ a {
     color: inherit;
 }
 
-p {
+p,
+.blog li {
     line-height: 3.2rem;
     letter-spacing: 2px;
 }
@@ -121,14 +124,6 @@ p {
     p {
         margin-bottom: 30px;
     }
-}
-
-section:nth-child(odd) {
-    background: $ice-blue;
-}
-
-section:nth-child(even) {
-    background: $light-blue;
 }
 
 button {
@@ -141,8 +136,6 @@ button {
         padding: 0px 10px;
     }
 }
-
-
 
 form {
     display: flex;
@@ -165,6 +158,16 @@ form {
 }
 
 // changing background images
+
+.home {
+    section:nth-child(odd) {
+        background: $ice-blue;
+    }
+
+    section:nth-child(even) {
+        background: $light-blue;
+    }
+}
 
 .home-header {
     @include custom-header-bg("../assets/home-image-1.jpg");
@@ -483,14 +486,41 @@ button[type="submit"] {
 
 
 // BLOG - main section
+.blog {
+    background: $ice-blue;
+    padding: 60px 0px;
+}
+
+.blog-aside-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 
 aside {
-    float: right;
-    width: 200px;
+    width: 35%;
+    height: 400px;
     display: flex;
     flex-direction: column;
-    .aside-img {
-        width: 200px;
+    // height: auto;
+    .text {
+        background: #fff;
+        padding: 15px;
+    }
+    ul {
+        list-style: none;
+        li::before {
+            content: "\2022";
+            color: $green-cyan;
+            display: inline-block;
+            margin-right: 5px;
+        }
+    }
+
+    .find-more {
+        display: block;
+        color: $spruce;
+        font-weight: 700;
     }
 }
 
@@ -499,7 +529,9 @@ aside {
     flex-direction: column;
     width: 60%;
     position: relative;
-    top: -150px;
+    top: -200px;
+    float: left;
+    margin-right: 40px;
 }
 
 .blog-article-image {
@@ -515,17 +547,12 @@ aside {
     margin-left: -500px;
 }
 
-
-aside {
-    float: right;
-
-}
-
-// MEDIA QUERY 1250PX
-// DESKTOP, LARGE LAPTOPS
+// ****MEDIA QUERY 1250PX
+// ****DESKTOP, LARGE LAPTOPS
 
 @media (max-width: 1250px) {
 
+// 1250PX HOME - article section
 
     .article-text-1 {
         padding: 50px 0 100px;
@@ -562,11 +589,31 @@ aside {
         margin-bottom: 50px;
     }
 
+// ** BLOG - main section
+
+    .blog-container {
+        margin-right: 30px;
+    }
+
+    .blog-article-image {
+        margin-left: -50px;
+    }
+
+    
+
+    aside {
+        position: relative;
+        right: -75px;
+        .text {
+            width: 90%;
+        }
+    }
 }
 
 
-// MEDIA QUERY 1024PX
-// DESKTOP, SMALL LAPTOPS
+//****MEDIA QUERY 1024PX
+//****DESKTOP, SMALL LAPTOPS
+
 @media (max-width: 1024px) {
 
     h1 {
@@ -589,7 +636,6 @@ aside {
     input {
         width: 100%;
         margin-right: 0;
-
     }
 
     input:first-child {

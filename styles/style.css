@@ -257,7 +257,8 @@ h4,
 nav li,
 p,
 input,
-textarea {
+textarea,
+.blog ul {
   font-family: 'Lato', sans-serif;
 }
 
@@ -276,7 +277,8 @@ nav {
 nav,
 button,
 form,
-p {
+p,
+.blog ul {
   font-size: 2rem;
 }
 
@@ -312,7 +314,7 @@ h3 {
 
 h4 {
   font-size: 3.0rem;
-  line-height: 4rem;
+  line-height: 5.8rem;
   letter-spacing: 3.2px;
 }
 
@@ -321,21 +323,14 @@ a {
   color: inherit;
 }
 
-p {
+p,
+.blog li {
   line-height: 3.2rem;
   letter-spacing: 2px;
 }
 
 .blog p {
   margin-bottom: 30px;
-}
-
-section:nth-child(odd) {
-  background: #FAfffe;
-}
-
-section:nth-child(even) {
-  background: #D2F9F1;
 }
 
 button {
@@ -360,6 +355,14 @@ form {
       -ms-flex-pack: justify;
           justify-content: space-between;
   background-color: #fff;
+}
+
+.home section:nth-child(odd) {
+  background: #FAfffe;
+}
+
+.home section:nth-child(even) {
+  background: #D2F9F1;
 }
 
 .home-header {
@@ -742,9 +745,25 @@ button[type="submit"] {
   padding-right: 0;
 }
 
+.blog {
+  background: #FAfffe;
+  padding: 60px 0px;
+}
+
+.blog-aside-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 aside {
-  float: right;
-  width: 200px;
+  width: 35%;
+  height: 400px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -754,8 +773,26 @@ aside {
           flex-direction: column;
 }
 
-aside .aside-img {
-  width: 200px;
+aside .text {
+  background: #fff;
+  padding: 15px;
+}
+
+aside ul {
+  list-style: none;
+}
+
+aside ul li::before {
+  content: "\2022";
+  color: #50E3C2;
+  display: inline-block;
+  margin-right: 5px;
+}
+
+aside .find-more {
+  display: block;
+  color: #0C5F4C;
+  font-weight: 700;
 }
 
 .blog-container {
@@ -768,7 +805,9 @@ aside .aside-img {
           flex-direction: column;
   width: 60%;
   position: relative;
-  top: -150px;
+  top: -200px;
+  float: left;
+  margin-right: 40px;
 }
 
 .blog-article-image {
@@ -783,10 +822,6 @@ aside .aside-img {
   padding: 40px 40px 40px 500px;
   border-top-style: none;
   margin-left: -500px;
-}
-
-aside {
-  float: right;
 }
 
 @media (max-width: 1250px) {
@@ -819,6 +854,19 @@ aside {
   }
   .article-img2 {
     margin-bottom: 50px;
+  }
+  .blog-container {
+    margin-right: 30px;
+  }
+  .blog-article-image {
+    margin-left: -50px;
+  }
+  aside {
+    position: relative;
+    right: -75px;
+  }
+  aside .text {
+    width: 90%;
   }
 }
 
