@@ -592,6 +592,249 @@ aside .find-more {
   padding-right: 0;
 }
 
+@media (max-width: 1250px) {
+  .article-text-1 {
+    padding: 50px 0 100px;
+  }
+  .article-text-2 {
+    padding: 100px 0 50px;
+  }
+  .article-container {
+    width: 90%;
+    margin-right: 60px;
+  }
+  .article-container:last-child {
+    margin-right: 0px;
+  }
+  .article-img1,
+  .article-img2 {
+    position: static;
+    height: 375px;
+  }
+  .article-img1 img,
+  .article-img2 img {
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .article-img1 {
+    margin-top: 50px;
+  }
+  .article-img2 {
+    margin-bottom: 50px;
+  }
+  .blog-container {
+    margin-right: 30px;
+  }
+  .blog-article-image {
+    margin-left: -50px;
+  }
+  aside {
+    position: relative;
+    right: -6px;
+  }
+  aside .text {
+    width: 90%;
+  }
+  aside img {
+    width: 300px;
+    position: relative;
+    right: 0;
+  }
+}
+
+@media (max-width: 1024px) {
+  h1 {
+    font-size: calc(11.2rem * .75);
+  }
+  h1 span {
+    font-size: calc(6.2rem * .75);
+    line-height: calc(5.8rem * .75);
+    letter-spacing: calc(6.7 * .75);
+  }
+  .home-header .main-title {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-right: 0;
+  }
+  input {
+    width: 100%;
+    margin-right: 0;
+  }
+  input:first-child {
+    margin-bottom: 20px;
+  }
+  .contact-info {
+    padding: 150px 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: calc(11.2rem * .6);
+  }
+  h1 span {
+    font-size: calc(6.2rem * .6);
+    line-height: calc(5.8rem * .6);
+    letter-spacing: calc(6.7 * .6);
+  }
+  h2 {
+    font-size: calc(6.2rem * .8);
+    letter-spacing: calc(9px * .8);
+    line-height: calc(5.8rem * .8);
+  }
+  header li {
+    display: none;
+  }
+  .fa-bars {
+    display: block;
+    /* make hamburger visible */
+  }
+  .visit {
+    padding-top: 60px;
+  }
+  .visit-flex-container {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .visit-images-flex-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .visit-summary {
+    -webkit-box-ordinal-group: 1;
+        -ms-flex-order: 0;
+            order: 0;
+    width: 100%;
+    text-align: center;
+    padding: 30px 0 0;
+  }
+  .header-inset-image {
+    position: static;
+  }
+  .header-inset-image,
+  .visit-guyana-image {
+    width: calc((100% - 20px) / 2);
+    margin-right: 20px;
+    height: 330px;
+  }
+  .header-inset-image img,
+  .visit-guyana-image img {
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .visit-guyana-image {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    margin-right: 0;
+  }
+  .gallery-flex-container {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+  .gallery-flex-container li:last-child {
+    display: none;
+  }
+  .extra-info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .icon-text-container {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  .offers-text {
+    width: 90%;
+  }
+  .blog-aside-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .blog-container,
+  aside {
+    position: static;
+    width: 100%;
+  }
+  aside {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  aside img {
+    width: 30%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  aside .text {
+    padding-top: 0;
+  }
+  .contact-form {
+    position: static;
+    width: 100%;
+  }
+  .contact-info {
+    float: none;
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    padding: 75px 0px 50px;
+  }
+  .socials {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media (max-width: 500px) {
+  .logo {
+    font-size: calc(3.46rem * .75);
+  }
+  h2 {
+    font-size: calc(6.2rem * .6);
+    letter-spacing: calc(9px * .6);
+    line-height: calc(5.8rem * .6);
+  }
+  h1 {
+    font-size: calc(11.2rem * .4);
+  }
+  h1 span {
+    font-size: calc(6.2rem * .4);
+    line-height: calc(5.8rem * .4);
+    letter-spacing: calc(6.7 * .4);
+  }
+  .home-header .main-title {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .header-inset-image {
+    display: none;
+  }
+  .visit-guyana-image {
+    width: 100%;
+  }
+  .visit-guyana-image img {
+    -o-object-fit: fit;
+       object-fit: fit;
+  }
+  .gallery-flex-container {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
 html {
   font-size: 62.5%;
 }
@@ -835,247 +1078,4 @@ footer {
 
 footer a {
   color: #50E3C2;
-}
-
-@media (max-width: 1250px) {
-  .article-text-1 {
-    padding: 50px 0 100px;
-  }
-  .article-text-2 {
-    padding: 100px 0 50px;
-  }
-  .article-container {
-    width: 90%;
-    margin-right: 60px;
-  }
-  .article-container:last-child {
-    margin-right: 0px;
-  }
-  .article-img1,
-  .article-img2 {
-    position: static;
-    height: 375px;
-  }
-  .article-img1 img,
-  .article-img2 img {
-    height: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
-  .article-img1 {
-    margin-top: 50px;
-  }
-  .article-img2 {
-    margin-bottom: 50px;
-  }
-  .blog-container {
-    margin-right: 30px;
-  }
-  .blog-article-image {
-    margin-left: -50px;
-  }
-  aside {
-    position: relative;
-    right: -6px;
-  }
-  aside .text {
-    width: 90%;
-  }
-  aside img {
-    width: 300px;
-    position: relative;
-    right: 0;
-  }
-}
-
-@media (max-width: 1024px) {
-  h1 {
-    font-size: calc(11.2rem * .75);
-  }
-  h1 span {
-    font-size: calc(6.2rem * .75);
-    line-height: calc(5.8rem * .75);
-    letter-spacing: calc(6.7 * .75);
-  }
-  .home-header .main-title {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    padding-right: 0;
-  }
-  input {
-    width: 100%;
-    margin-right: 0;
-  }
-  input:first-child {
-    margin-bottom: 20px;
-  }
-  .contact-info {
-    padding: 150px 30px;
-  }
-}
-
-@media (max-width: 768px) {
-  h1 {
-    font-size: calc(11.2rem * .6);
-  }
-  h1 span {
-    font-size: calc(6.2rem * .6);
-    line-height: calc(5.8rem * .6);
-    letter-spacing: calc(6.7 * .6);
-  }
-  h2 {
-    font-size: calc(6.2rem * .8);
-    letter-spacing: calc(9px * .8);
-    line-height: calc(5.8rem * .8);
-  }
-  header li {
-    display: none;
-  }
-  .fa-bars {
-    display: block;
-    /* make hamburger visible */
-  }
-  .visit {
-    padding-top: 60px;
-  }
-  .visit-flex-container {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-  .visit-images-flex-container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-  .visit-summary {
-    -webkit-box-ordinal-group: 1;
-        -ms-flex-order: 0;
-            order: 0;
-    width: 100%;
-    text-align: center;
-    padding: 30px 0 0;
-  }
-  .header-inset-image {
-    position: static;
-  }
-  .header-inset-image,
-  .visit-guyana-image {
-    width: calc((100% - 20px) / 2);
-    margin-right: 20px;
-    height: 330px;
-  }
-  .header-inset-image img,
-  .visit-guyana-image img {
-    height: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
-  .visit-guyana-image {
-    -webkit-box-shadow: none;
-            box-shadow: none;
-    margin-right: 0;
-  }
-  .gallery-flex-container {
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
-  }
-  .gallery-flex-container li:last-child {
-    display: none;
-  }
-  .extra-info {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .icon-text-container {
-    width: 100%;
-    margin-bottom: 50px;
-  }
-  .offers-text {
-    width: 90%;
-  }
-  .blog-aside-container {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .blog-container,
-  aside {
-    position: static;
-    width: 100%;
-  }
-  aside {
-    -webkit-box-ordinal-group: 0;
-        -ms-flex-order: -1;
-            order: -1;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-  }
-  aside img {
-    width: 30%;
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
-  aside .text {
-    padding-top: 0;
-  }
-  .contact-form {
-    position: static;
-    width: 100%;
-  }
-  .contact-info {
-    float: none;
-    text-align: center;
-    width: 100%;
-    margin: 0;
-    padding: 75px 0px 50px;
-  }
-  .socials {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-}
-
-@media (max-width: 500px) {
-  .logo {
-    font-size: calc(3.46rem * .75);
-  }
-  h2 {
-    font-size: calc(6.2rem * .6);
-    letter-spacing: calc(9px * .6);
-    line-height: calc(5.8rem * .6);
-  }
-  h1 {
-    font-size: calc(11.2rem * .4);
-  }
-  h1 span {
-    font-size: calc(6.2rem * .4);
-    line-height: calc(5.8rem * .4);
-    letter-spacing: calc(6.7 * .4);
-  }
-  .home-header .main-title {
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-  }
-  .header-inset-image {
-    display: none;
-  }
-  .visit-guyana-image {
-    width: 100%;
-  }
-  .visit-guyana-image img {
-    -o-object-fit: fit;
-       object-fit: fit;
-  }
-  .gallery-flex-container {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-  }
 }
