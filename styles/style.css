@@ -702,17 +702,6 @@ nav ul {
   font-size: 3rem;
 }
 
-footer {
-  background-color: #2c2c2c;
-  color: #fff;
-  text-align: center;
-  padding: 10px 0;
-}
-
-footer a {
-  color: #50E3C2;
-}
-
 input,
 textarea {
   padding: 20px;
@@ -744,33 +733,15 @@ button[type="submit"] {
   padding: 20px;
 }
 
-.contact-info {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  float: right;
-  width: calc(40% - 40px);
-  margin-left: 40px;
-  padding: 100px 50px 150px;
+footer {
+  background-color: #2c2c2c;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
 }
 
-.socials {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  font-size: 2.5rem;
-}
-
-.socials li {
-  padding-right: 20px;
-}
-
-.socials li:last-child {
-  padding-right: 0;
+footer a {
+  color: #50E3C2;
 }
 
 .blog {
