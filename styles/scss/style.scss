@@ -23,7 +23,7 @@ $spruce: #0C5F4C;
 
 
 
-// general styles
+//***GLOBAL styles
 html {
     font-size: 62.5%;
 }
@@ -54,7 +54,7 @@ img {
     margin: 0 auto;
 }
 
-// general font styles
+//***GENERAL font styles
 
 h2,
 h3,
@@ -152,7 +152,7 @@ form {
     background-color: #fff;
 }
 
-//*** GENERAL header styles
+//***GENERAL header styles
 header {
     a {
         padding: 5px 10px;
@@ -179,7 +179,7 @@ header {
     height: 100%;
 }
 
-// GENERAL navigator styles
+//***GENERAL navigator styles
 
 nav {
     display: flex;
@@ -216,131 +216,35 @@ nav {
     font-size: 3rem;
 }
 
+//***GENERAL FOOTER
 
-// HOME - visit guyana section
-
-
-// HOME - gallery section 
-
-.gallery {
-    padding: 80px 0 80px;
-}
-
-.gallery-flex-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    // grid-template-rows: 275px;
-    gap: 25px;
-    li {
-        display: flex;
+footer {
+    background-color: #2c2c2c;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    a {
+        color: $green-cyan;
     }
 }
 
-// HOME - extra info section
 
-.extra-info {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    padding: 75px 0;
-    align-items: space-between;
-    .icon-text-container:last-child {
-        margin-bottom: 0;
-    }
-}
-
-.icon {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: $ice-blue;
-    background-color: $green-cyan;
-    font-size: 20px;
-    height: 40px;
-    width: 40px;
-    border-radius: 50%;
-    margin-right: 15px;
-}
-
-.icon-text-container {
-    display: flex;
-    flex-wrap: wrap;
-    width: 50%;
-    margin-bottom: 50px;
-}
-
-.extra-text {
-    width: calc(100% - 55px);
-}
-
-// HOME - articles section
-
-.articles {
-    display: flex;
-    justify-content: space-between;
-}
-
-.article-container {
-    display: flex;
-    flex-direction: column;
-    width: calc((100% - 100px) / 2);
-    margin-right: 100px;
-}
-
-.article-container:last-child {
-    margin-right: 0px;
-}
-
-.article-img1 {
-    position: relative;
-    top: -50px;
-    box-shadow: 15px 15px $green-cyan;
-
-}
-
-.article-img2 {
-    position: relative;
-    right: 0px;
-    bottom: -50px;
-    order: 4;
-    box-shadow: -15px 15px $green-cyan;
-}
-
-article {
-    // padding: 30px 0px;
-    width: 75%;
-
-}
-
-.article-text-1 {
-    text-align: right;
-    align-self: flex-end;
-    // padding-bottom: 50px;
-}
 
 // HOME - offers section
 
 .offers-image {
     width: 100%;
     margin-bottom: 50px;
-    // img {
-    //     object-fit: cover;
-    //     height: 100%;
-    // }
 }
 
 .offers-text {
-    width: 60%;
+    width: 70%;
     text-align: center;
     margin: 0 auto 70px;
 }
 
 // HOME - footer section
-footer {
-    background-color: #2c2c2c;
-    color: #fff;
-    text-align: center;
-}
+
 
 
 // CONTACT PAGE
@@ -686,6 +590,12 @@ aside {
     .icon-text-container {
         width: 100%;
         margin-bottom: 50px;
+    }
+
+    // 768px HOME - offers section
+
+    .offers-text {
+        width: 90%;
     }
 
     //768PX BLOG - main section
