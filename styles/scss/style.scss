@@ -495,14 +495,15 @@ button[type="submit"] {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    height: auto;
 }
 
 aside {
     width: 35%;
-    height: 400px;
+    // height: 400px;
     display: flex;
     flex-direction: column;
-    // height: auto;
+    margin-bottom: 50px;
     .text {
         background: #fff;
         padding: 15px;
@@ -545,6 +546,16 @@ aside {
     padding: 40px 40px 40px 500px;
     border-top-style: none;
     margin-left: -500px;
+}
+
+.comments {
+    img {
+        width: 100px;
+    }
+}
+
+.individual-comment {
+    padding: 20px 0;
 }
 
 // ****MEDIA QUERY 1250PX
@@ -603,7 +614,7 @@ aside {
 
     aside {
         position: relative;
-        right: -75px;
+        right: -63px;
         .text {
             width: 90%;
         }
@@ -735,6 +746,29 @@ aside {
     .icon-text-container {
         width: 100%;
         margin-bottom: 50px;
+    }
+
+    //768PX BLOG - main section
+    .blog-aside-container {
+        flex-direction: column;
+    }
+
+    .blog-container,
+    aside {
+        position: static;
+        width: 100%;
+    }
+
+    aside {
+        order: -1;
+        flex-direction: row; 
+        img {
+            width: 30%;
+            object-fit: cover;
+        }
+        .text {
+            padding-top: 0;
+        }
     }
 
 
