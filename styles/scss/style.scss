@@ -117,6 +117,12 @@ p {
     letter-spacing: 2px;
 }
 
+.blog {
+    p {
+        margin-bottom: 30px;
+    }
+}
+
 section:nth-child(odd) {
     background: $ice-blue;
 }
@@ -477,6 +483,16 @@ button[type="submit"] {
 
 
 // BLOG - main section
+
+aside {
+    float: right;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    .aside-img {
+        width: 200px;
+    }
+}
 
 .blog-container {
     display: flex;

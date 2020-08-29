@@ -326,6 +326,10 @@ p {
   letter-spacing: 2px;
 }
 
+.blog p {
+  margin-bottom: 30px;
+}
+
 section:nth-child(odd) {
   background: #FAfffe;
 }
@@ -736,6 +740,22 @@ button[type="submit"] {
 
 .socials li:last-child {
   padding-right: 0;
+}
+
+aside {
+  float: right;
+  width: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+aside .aside-img {
+  width: 200px;
 }
 
 .blog-container {
