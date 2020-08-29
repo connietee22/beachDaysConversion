@@ -230,42 +230,6 @@ footer {
 
 
 
-// HOME - offers section
-
-.offers-image {
-    width: 100%;
-    margin-bottom: 50px;
-}
-
-.offers-text {
-    width: 70%;
-    text-align: center;
-    margin: 0 auto 70px;
-}
-
-// HOME - footer section
-
-
-
-// CONTACT PAGE
-
-.contact-main {
-    background: $ice-blue;
-}
-
-.form-container {
-    position: relative;
-}
-
-.contact-form {
-    width: 60%;
-    padding: 70px 50px 50px;
-    box-shadow: 20px 20px grey;
-    position: absolute;
-    width: 60%;
-    top: -150px;
-    left: 0;
-}
 
 input,
 textarea {
@@ -275,9 +239,9 @@ textarea {
 }
 
 input {
-    border-bottom: 2px solid $green-cyan;
     width: calc((100% - 20px) / 2);
-    margin-right: 20px
+    margin-right: 20px;
+    border-bottom: 2px solid $green-cyan;
 }
 
 [type="email"] {

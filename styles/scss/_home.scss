@@ -1,3 +1,5 @@
+//***HOME - HEADER SECTION
+
 .home {
     section:nth-child(odd) {
         background: $ice-blue;
@@ -20,8 +22,7 @@
     }
 }
 
-
-// VISIT GUYANA SECTION
+//***HOME - VISIT GUYANA SECTION
 .header-inset-image {
     width: 45%;
     position: absolute;
@@ -145,4 +146,16 @@ article {
 .article-text-1 {
     text-align: right;
     align-self: flex-end;
+}
+
+//***HOME - offers section
+.offers-image {
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.offers-text {
+    width: 70%;
+    text-align: center;
+    margin: 0 auto 70px;
 }
