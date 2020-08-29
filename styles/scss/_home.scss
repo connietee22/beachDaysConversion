@@ -1,0 +1,55 @@
+.home {
+    section:nth-child(odd) {
+        background: $ice-blue;
+    }
+
+    section:nth-child(even) {
+        background: $light-blue;
+    }
+}
+
+.home-header {
+    @include custom-header-bg("../assets/home-image-1.jpg");
+}
+
+.home-header {
+    display: flex;
+    .main-title {
+        justify-content: flex-end;
+        padding-right: 10%;
+    }
+}
+
+
+// VISIT GUYANA SECTION
+.header-inset-image {
+    width: 45%;
+    position: absolute;
+    bottom: -70px;
+    left: -10px;
+}
+
+.visit {
+    padding: 120px 0 80px;
+    display: flex;
+}
+
+.visit-flex-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.visit-summary {
+    width: calc(75% - 50px);
+    padding-right: 50px;
+    order: -1;
+    p {
+        margin-bottom: 15px;
+    }
+}
+
+.visit-guyana-image {
+    box-shadow: 10px 10px $green-cyan;
+}
+

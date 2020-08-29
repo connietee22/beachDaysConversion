@@ -1,0 +1,13 @@
+.blog-header {
+    @include custom-header-bg('../assets/blog-image-1.jpg');
+}
+
+.blog {
+    p {
+        margin-bottom: 30px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
