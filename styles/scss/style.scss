@@ -56,10 +56,6 @@ img {
 	font-size: 2rem;
 }
 
-// .skip-link:focus {
-// 	left: 0;
-// }
-
 .wrapper {
     width: 90%;
     max-width: 1150px;
@@ -150,6 +146,7 @@ a {
 
 .skip-link:focus {
     left: 0;
+    transform: none;
     color: $spruce;
     background: white;
 }
@@ -162,16 +159,17 @@ p {
 button,
 .read-more {
     background: $twilight-blue;
+    color: $ice-blue;
+    border: 3px solid transparent; // to prevent bump when border added on focus/hover
     line-height: 3.4rem;
     letter-spacing: 1;
-    color: $ice-blue;
     text-decoration: none;
     padding: 0px 10px;
     &:hover,
     &:focus {
         background: $ice-blue;
         color: $twilight-blue;
-        border: 2px solid $green-cyan;
+        border: 3px solid $green-cyan;
     }
 }
 
@@ -206,7 +204,6 @@ header {
 }
 
 //***GENERAL navigator styles
-
 nav {
     display: flex;
     justify-content: space-between;
@@ -230,12 +227,12 @@ nav {
     margin: 0;
 }
 
-// keeps current page at different colour, without a link 
+// keeps current page at different colour as a placemarker
 .current-page {
     color: $green-cyan;
 }
 
-// hamburger menu - hidden initially
+// hamburger menu - initial hide
 .hamburger {
     display: none;
     color: $ice-blue;
@@ -288,36 +285,34 @@ footer {
 
 @media (max-width: 1250px) {
 
-// 1250PX HOME - article section
+//**1250PX HOME - article section
+    // .article-text-1 {
+    //     padding: 105px 0px;
+    // }
 
-    .article-text-1 {
-        padding: 105px 0px;
-    }
+    // .article-text-2 {
+    //     padding-bottom: 60px;
+    // }
 
-    .article-text-2 {
-        padding-bottom: 60px;
-    }
+    // .article-container {
+    //     width: 90%;
+    // }
 
-    .article-container {
-        width: 90%;
-    }
+    // .article-container:last-child {
+    //     margin-right: 0px;
+    // }
 
-    .article-container:last-child {
-        margin-right: 0px;
-    }
+    // .article-img1,
+    // .article-img2 {
+    //     // position: static;
+    //     // height: 375px;
+    //     img {
+    //         height: 100%;
+    //         object-fit: cover;
+    //     }
+    // }
 
-    .article-img1,
-    .article-img2 {
-        position: static;
-        height: 375px;
-        img {
-            height: 100%;
-            object-fit: cover;
-        }
-    }
-
-// ** BLOG - main section
-
+//**1250px BLOG - main section
     .blog-container {
         margin-right: 30px;
     }
@@ -345,6 +340,7 @@ footer {
 //****DESKTOP, SMALL LAPTOPS
 @media (max-width: 1024px) {
 
+    //**1024px GENERAL
     h1 {
         font-size: calc(5.5rem + 4vw);
         span {
@@ -365,10 +361,9 @@ footer {
         }
     }
 
-    // 1024px BLOG
-
+    //**1024px BLOG - main section
     .blog-aside-container {
-        flex-direction: column;
+        flex-direction: column; // to swing everything to stack
     }
 
     .blog-container,
@@ -378,7 +373,7 @@ footer {
     }
 
     aside {
-        order: -1;
+        order: -1; // to bring up top
         flex-direction: row; 
         img {
             width: 30%;
@@ -392,10 +387,9 @@ footer {
     .article-text-wrapper, 
     .blog-article-text {
         padding: 40px 50px;
-        // margin: 0 auto;
     }
 
-    // 1024px CONTACT US - form section
+    //**1024px CONTACT - form section
     input {
         width: 100%;
         margin-right: 0;
@@ -414,7 +408,7 @@ footer {
 //***TABLETS
 @media (max-width: 768px) {
 
-    // 768px FONT RESIZES 
+    //**768px GENERAL RESIZING 
     h1 {
         font-size: calc(4.8rem + 4vw);
         span {
@@ -434,11 +428,6 @@ footer {
         letter-spacing: calc(3.2px * .8);
     }
 
-    a {
-        text-decoration: none;
-        color: inherit;
-    }
-
     // nav li,
     // button,
     // form,
@@ -448,17 +437,16 @@ footer {
     // }
 
 
-    // 768PX - HEADER STYLES
-
+    //**768PX - HEADER STYLES
     header li {
-        display: none;
+        display: none; //removing word navigation
     }
     
     .hamburger {
-        display: block; /* make hamburger visible */
+        display: block; // make hamburger visible
     }
 
-    // 768px HOME - visit section
+    //**768px HOME - visit section
     .visit {
         padding: 50px 0px;
     }
@@ -467,21 +455,10 @@ footer {
         flex-wrap: wrap;
     }
 
-    .visit-images-flex-container {
+    .visit-images-container {
         display: flex;
     }
     
-    .visit-summary {
-        order: 0;
-        width: 100%;
-        text-align: center;
-        padding: 30px 0 0;
-    }
-
-    .header-inset-image {
-        position: static; // swinging inset image down beside visit guyana image
-    }
-
     .header-inset-image,
     .visit-guyana-image {
         width: calc((100% - 20px) / 2);
@@ -493,13 +470,23 @@ footer {
         }
     }
 
+    .header-inset-image {
+        position: static; // swinging inset image down beside visit guyana image
+    }
+
     .visit-guyana-image {
         box-shadow: none;
         margin-right: 0;
     }
+    
+    .visit-summary {
+        order: 0;
+        width: 100%;
+        text-align: center;
+        padding: 30px 0px;
+    }
 
-    // 768px HOME - gallery section
-
+    //**768px HOME - gallery section
     .gallery {
         padding: 50px 0px;
     }
@@ -514,7 +501,7 @@ footer {
         }
     }
 
-    // 768px HOME - extra info section
+    //**768px HOME - extra info section
 
     .extra-info {
         flex-direction: column;
@@ -526,7 +513,7 @@ footer {
         margin-bottom: 50px;
     }
 
-    // 768px HOME - articles section 
+    //**768px HOME - articles section 
     .articles-quadrant-container {
         flex-direction: column;
         align-items: center;
@@ -541,7 +528,7 @@ footer {
     .article-img1,
     .article-img2 {
         width: 100%;
-        height: auto;
+        // height: auto;
         box-shadow: none;
     }
 
@@ -557,17 +544,12 @@ footer {
         padding: 40px 0px 60px;
     }
 
-    // 768px HOME - offers section
+    //**768px HOME - offers section
     .offers-text {
         width: 90%;
     }
 
-    //768PX BLOG - main section
-
-    
-
     //768px CONTACT - form section
-
     .contact-form {
         position: static; // brings form back into section
         width: 100%;

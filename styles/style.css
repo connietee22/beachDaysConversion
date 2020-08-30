@@ -384,57 +384,57 @@ textarea {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding: 80px 0;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .article-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  width: calc((100% - 100px) / 2);
-  margin-right: 100px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-.article-container:last-child {
-  margin-right: 0px;
+.article-container img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+}
+
+.article-container > * {
+  width: calc((100% - 80px) / 2);
+  margin-right: 80px;
+  height: 400px;
 }
 
 .article-img1 {
   position: relative;
-  top: -125px;
+  top: -50px;
   -webkit-box-shadow: 15px 15px #50E3C2;
           box-shadow: 15px 15px #50E3C2;
 }
 
 .article-img2 {
+  -webkit-box-ordinal-group: 11;
+      -ms-flex-order: 10;
+          order: 10;
   position: relative;
-  right: 0px;
-  bottom: -125px;
-  -webkit-box-ordinal-group: 5;
-      -ms-flex-order: 4;
-          order: 4;
+  bottom: -50px;
   -webkit-box-shadow: -15px 15px #50E3C2;
           box-shadow: -15px 15px #50E3C2;
 }
 
 .article-text-1,
-.article-text-2 {
-  width: 70%;
+.article-img2 {
+  margin-right: 0px;
 }
 
-.article-text-1 {
-  text-align: right;
-  -ms-flex-item-align: end;
-      align-self: flex-end;
+.article-text-2 {
+  margin-left: 80px;
 }
 
 .offers-image {
@@ -748,6 +748,8 @@ a:hover, a:focus {
 
 .skip-link:focus {
   left: 0;
+  -webkit-transform: none;
+          transform: none;
   color: #0C5F4C;
   background: white;
 }
@@ -760,9 +762,10 @@ p {
 button,
 .read-more {
   background: #063974;
+  color: #FAfffe;
+  border: 3px solid transparent;
   line-height: 3.4rem;
   letter-spacing: 1;
-  color: #FAfffe;
   text-decoration: none;
   padding: 0px 10px;
 }
@@ -772,7 +775,7 @@ button:hover, button:focus,
 .read-more:focus {
   background: #FAfffe;
   color: #063974;
-  border: 2px solid #50E3C2;
+  border: 3px solid #50E3C2;
 }
 
 form {
@@ -892,29 +895,6 @@ footer a {
 }
 
 @media (max-width: 1250px) {
-  .article-text-1 {
-    padding: 105px 0px;
-  }
-  .article-text-2 {
-    padding-bottom: 60px;
-  }
-  .article-container {
-    width: 90%;
-  }
-  .article-container:last-child {
-    margin-right: 0px;
-  }
-  .article-img1,
-  .article-img2 {
-    position: static;
-    height: 375px;
-  }
-  .article-img1 img,
-  .article-img2 img {
-    height: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
   .blog-container {
     margin-right: 30px;
   }
@@ -1014,16 +994,11 @@ footer a {
     line-height: calc(5.8rem * .8);
     letter-spacing: calc(3.2px * .8);
   }
-  a {
-    text-decoration: none;
-    color: inherit;
-  }
   header li {
     display: none;
   }
   .hamburger {
     display: block;
-    /* make hamburger visible */
   }
   .visit {
     padding: 50px 0px;
@@ -1032,21 +1007,10 @@ footer a {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
-  .visit-images-flex-container {
+  .visit-images-container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-  }
-  .visit-summary {
-    -webkit-box-ordinal-group: 1;
-        -ms-flex-order: 0;
-            order: 0;
-    width: 100%;
-    text-align: center;
-    padding: 30px 0 0;
-  }
-  .header-inset-image {
-    position: static;
   }
   .header-inset-image,
   .visit-guyana-image {
@@ -1060,10 +1024,21 @@ footer a {
     -o-object-fit: cover;
        object-fit: cover;
   }
+  .header-inset-image {
+    position: static;
+  }
   .visit-guyana-image {
     -webkit-box-shadow: none;
             box-shadow: none;
     margin-right: 0;
+  }
+  .visit-summary {
+    -webkit-box-ordinal-group: 1;
+        -ms-flex-order: 0;
+            order: 0;
+    width: 100%;
+    text-align: center;
+    padding: 30px 0px;
   }
   .gallery {
     padding: 50px 0px;
@@ -1103,7 +1078,6 @@ footer a {
   .article-img1,
   .article-img2 {
     width: 100%;
-    height: auto;
     -webkit-box-shadow: none;
             box-shadow: none;
   }
