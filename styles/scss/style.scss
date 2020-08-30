@@ -16,18 +16,6 @@ $spruce: #0C5F4C;
     background-repeat: no-repeat;
 }
 
-.home-header {
-    @include custom-header-bg("../assets/home-image-1.jpg");
-}
-
-.blog-header {
-    @include custom-header-bg('../assets/blog-image-1.jpg');
-}
-
-.contact-us {
-    @include custom-header-bg('../assets/contact-image-1.jpg');
-}
-
 @import "setup";
 @import "home";
 @import "blog";
@@ -329,9 +317,8 @@ footer {
         }
     }
 
-    .article-text-wrapper, 
     .blog-article-text {
-        padding: 40px 50px;
+        padding: 40px 5vw;
     }
 
     //**1024px CONTACT - form section
@@ -372,7 +359,6 @@ footer {
         line-height: calc(5.8rem * .8);
         letter-spacing: calc(3.2px * .8);
     }
-
 
     //**768PX - HEADER STYLES
     header li {
