@@ -221,6 +221,14 @@ textarea {
   overflow: hidden;
 }
 
+.home section:nth-child(odd) {
+  background: #FAfffe;
+}
+
+.home section:nth-child(even) {
+  background: #D2F9F1;
+}
+
 .visit-summary p,
 .text-summary p {
   margin-bottom: 15px;
@@ -233,14 +241,6 @@ textarea {
 
 .articles-quadrant-container h3 {
   color: #063974;
-}
-
-.home section:nth-child(odd) {
-  background: #FAfffe;
-}
-
-.home section:nth-child(even) {
-  background: #D2F9F1;
 }
 
 .home-header {
@@ -270,10 +270,10 @@ textarea {
 }
 
 .visit {
-  padding: 120px 0 80px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding: 120px 0 80px;
 }
 
 .visit-flex-container {
@@ -345,14 +345,13 @@ textarea {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  color: #FAfffe;
-  background-color: #50E3C2;
   font-size: 20px;
-  margin-top: 5px;
   height: 40px;
   width: 40px;
+  color: #FAfffe;
+  background-color: #50E3C2;
+  margin: 8px 15px 0px 0px;
   border-radius: 50%;
-  margin-right: 15px;
 }
 
 .icon-text-container {
@@ -420,7 +419,6 @@ textarea {
 }
 
 .text-summary {
-  padding: 60px 0px 0px 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -431,8 +429,7 @@ textarea {
 }
 
 .text-items {
-  width: 85%;
-  max-width: 500px;
+  width: 75%;
 }
 
 .article-text-1,
@@ -441,9 +438,13 @@ textarea {
   padding-left: 0px;
 }
 
+.article-text-1 {
+  padding-top: 125px;
+}
+
 .article-text-2 {
   text-align: right;
-  padding-top: 75px;
+  padding-top: 80px;
 }
 
 .article-text-2 .text-items {
@@ -457,7 +458,7 @@ textarea {
 }
 
 .offers-text {
-  width: 70%;
+  width: 75%;
   text-align: center;
   margin: 0 auto 70px;
 }
@@ -1078,10 +1079,14 @@ footer a {
     width: 100%;
     margin-bottom: 50px;
   }
+  .articles-quadrant-container {
+    padding-bottom: 0;
+  }
   .text-summary {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    width: 100%;
   }
   .article-text-2 .text-items {
     -ms-flex-item-align: center;
@@ -1103,7 +1108,6 @@ footer a {
   }
   .article-text-1,
   .article-text-2 {
-    width: 90%;
     margin: 0px auto;
     text-align: center;
     padding: 50px 0px 60px;

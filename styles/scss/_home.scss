@@ -1,4 +1,15 @@
-//***HOME - font styles
+//***HOME - general styles
+
+.home {
+    section:nth-child(odd) {
+        background: $ice-blue;
+    }
+
+    section:nth-child(even) {
+        background: $light-blue;
+    }
+}
+
 .visit-summary,
 .text-summary {
     p {
@@ -19,16 +30,6 @@
     }
 }
 
-.home {
-    section:nth-child(odd) {
-        background: $ice-blue;
-    }
-
-    section:nth-child(even) {
-        background: $light-blue;
-    }
-}
-
 //***HOME - HEADER SECTION
 .home-header {
     @include custom-header-bg("../assets/home-image-1.jpg");
@@ -39,18 +40,17 @@
     }
 }
 
-
 //***HOME - VISIT GUYANA SECTION
 .header-inset-image {
     width: 45%;
-    position: absolute;
+    position: absolute; // brings it on top of header
     bottom: -70px;
     left: -10px;
 }
 
 .visit {
+    display: flex; 
     padding: 120px 0 80px;
-    display: flex;
 }
 
 .visit-flex-container {
@@ -60,7 +60,7 @@
 }
 
 .visit-summary {
-    width: calc(75% - 50px);
+    width: calc(75% - 50px); // text to left
     padding-right: 50px;
     order: -1;
 }
@@ -100,14 +100,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    color: $ice-blue;
-    background-color: $green-cyan;
     font-size: 20px;
-    margin-top: 5px;
     height: 40px;
     width: 40px;
+    color: $ice-blue;
+    background-color: $green-cyan;
+    margin: 8px 15px 0px 0px;
     border-radius: 50%;
-    margin-right: 15px;
 }
 
 .icon-text-container {
@@ -118,7 +117,7 @@
 }
 
 .extra-text {
-    width: calc(100% - 55px);
+    width: calc(100% - 55px); // minus size of icon
 }
 
 //***HOME - article-image quadrant
@@ -129,7 +128,7 @@
 }
 
 .article-container {
-    display: flex;
+    display: flex; // to contain each image and text set
     flex-wrap: wrap;
     justify-content: space-between;
     img {
@@ -157,14 +156,12 @@
 }
 
 .text-summary {
-    padding: 60px 0px 0px 40px;
     display: flex;
     flex-direction: column;
 }
 
 .text-items {
-    width: 85%;
-    max-width: 500px;
+    width: 75%; // so text doesn't bleed to the edge
 }
 
 .article-text-1,
@@ -173,9 +170,13 @@
     padding-left: 0px;
 }
 
+.article-text-1 {
+    padding-top: 125px;
+}
+
 .article-text-2 {
     text-align: right;
-    padding-top: 75px;
+    padding-top: 80px;
     .text-items {
         align-self: flex-end;
     }
@@ -188,7 +189,7 @@
 }
 
 .offers-text {
-    width: 70%;
+    width: 75%;
     text-align: center;
     margin: 0 auto 70px;
 }

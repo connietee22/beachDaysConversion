@@ -448,10 +448,15 @@ footer {
 
     //**768px HOME - articles section 
 
+    .articles-quadrant-container {
+        padding-bottom: 0;
+    }
+    
     .text-summary {
         align-items: center;
+        width: 100%;
     }
-
+    
     .article-text-2 {
         .text-items {
             align-self: center;
@@ -472,11 +477,11 @@ footer {
 
     .article-text-1,
     .article-text-2 {
-        width: 90%;
         margin: 0px auto;
         text-align: center;
         padding: 50px 0px 60px;
     }
+
 
     //**768px HOME - offers section
     .offers-text {
