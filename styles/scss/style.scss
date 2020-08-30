@@ -317,8 +317,9 @@ footer {
         }
     }
 
+    .article-text-wrapper,
     .blog-article-text {
-        padding: 40px 5vw;
+        padding: 40px 100px;
     }
 
     //**1024px CONTACT - form section
@@ -360,7 +361,7 @@ footer {
         letter-spacing: calc(3.2px * .8);
     }
 
-    //**768PX - HEADER STYLES
+    //**768PX - GENERAL HEADER STYLES
     header li {
         display: none; //removing word navigation
     }
@@ -467,10 +468,15 @@ footer {
         padding: 50px 0px 60px;
     }
 
-
     //**768px HOME - offers section
     .offers-text {
         width: 90%;
+    }
+
+    //**768px BLOG - main section
+    .article-text-wrapper,
+    .blog-article-text {
+        padding: 40px 5vw;
     }
 
     //768px CONTACT - form section

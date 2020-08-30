@@ -464,7 +464,7 @@ textarea {
 
 .blogpage {
   background: #FAfffe;
-  padding: 60px 0px;
+  padding-top: 60px;
 }
 
 .blogpage p {
@@ -580,7 +580,8 @@ aside .find-more {
   border-left-style: none;
 }
 
-.blog-article-text {
+.blog-article-text,
+.article-text-wrapper {
   padding: 40px 40px 40px calc(5% + 2.5vw);
 }
 
@@ -598,7 +599,7 @@ aside .find-more {
 }
 
 .blog-form {
-  padding: 50px 0px;
+  padding-top: 50px;
   background-color: #FAfffe;
 }
 
@@ -968,8 +969,9 @@ footer a {
   aside .text {
     padding-top: 0;
   }
+  .article-text-wrapper,
   .blog-article-text {
-    padding: 40px 5vw;
+    padding: 40px 100px;
   }
   input {
     width: 100%;
@@ -1099,6 +1101,10 @@ footer a {
   }
   .offers-text {
     width: 90%;
+  }
+  .article-text-wrapper,
+  .blog-article-text {
+    padding: 40px 5vw;
   }
   .contact-form {
     position: static;
