@@ -365,6 +365,30 @@ footer {
         }
     }
 
+    // 1024px BLOG
+
+    .blog-aside-container {
+        flex-direction: column;
+    }
+
+    .blog-container,
+    aside {
+        position: static;
+        width: 100%;
+    }
+
+    aside {
+        order: -1;
+        flex-direction: row; 
+        img {
+            width: 30%;
+            object-fit: cover;
+        }
+        .text {
+            padding-top: 0;
+        }
+    }
+
     // 1024px CONTACT US - form section
     input {
         width: 100%;
@@ -417,11 +441,6 @@ footer {
     //     font-size: calc(1.25rem + 1.25vw);
     // }
 
-    // p,
-    // .blogpage li {
-    //     line-height: calc(3.2rem * .8);
-    //     letter-spacing: calc(2px * .8);
-    // }
 
     // 768PX - HEADER STYLES
 
@@ -538,28 +557,7 @@ footer {
     }
 
     //768PX BLOG - main section
-    .blog-aside-container {
-        flex-direction: column;
-    }
-
-    .blog-container,
-    aside {
-        position: static;
-        width: 100%;
-    }
-
-    aside {
-        order: -1;
-        flex-direction: row; 
-        img {
-            width: 30%;
-            object-fit: cover;
-        }
-        .text {
-            padding-top: 0;
-        }
-    }
-
+   
 
     //768px CONTACT - form section
 
