@@ -103,12 +103,6 @@
 }
 
 //***HOME - articles section
-
-article {
-    width: 75%;
-    // margin: 30px 0px;
-}
-
 .articles-quadrant-container {
     display: flex;
     justify-content: space-between;
@@ -137,6 +131,11 @@ article {
     bottom: -250px;
     order: 4;
     box-shadow: -15px 15px $green-cyan;
+}
+
+.article-text-1,
+.article-text-2 {
+    width: 80%;
 }
 
 .article-text-1 {

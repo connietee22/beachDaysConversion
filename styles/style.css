@@ -379,10 +379,6 @@ textarea {
   width: calc(100% - 55px);
 }
 
-article {
-  width: 75%;
-}
-
 .articles-quadrant-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -426,6 +422,11 @@ article {
           box-shadow: -15px 15px #50E3C2;
 }
 
+.article-text-1,
+.article-text-2 {
+  width: 80%;
+}
+
 .article-text-1 {
   text-align: right;
   -ms-flex-item-align: end;
@@ -444,20 +445,20 @@ article {
   margin: 0 auto 70px;
 }
 
-.blog {
+.blogpage {
   background: #FAfffe;
   padding: 60px 0px;
 }
 
-.blog p {
+.blogpage p {
   margin-bottom: 30px;
 }
 
-.blog p:last-child {
+.blogpage p:last-child {
   margin-bottom: 0;
 }
 
-.blog li {
+.blogpage li {
   line-height: 3.2rem;
   letter-spacing: 2px;
 }
@@ -544,15 +545,24 @@ aside .find-more {
   -webkit-box-shadow: 15px 15px #50E3C2;
           box-shadow: 15px 15px #50E3C2;
   position: relative;
+  left: -15px;
 }
 
 .blog-article-text {
-  border: 2px solid #50E3C2;
-  padding: 40px 40px 40px 0px;
   border-left-style: none;
-  max-width: 750px;
+  border: 2px solid #50E3C2;
+}
+
+.blog-article-text {
+  padding: 40px 40px 40px 10%;
+}
+
+.comments {
+  margin: 0;
+  padding: 0;
   -ms-flex-item-align: end;
       align-self: flex-end;
+  width: 75%;
 }
 
 .blog-date {
@@ -657,7 +667,7 @@ nav li,
 p,
 input,
 textarea,
-.blog li {
+.blogpage li {
   font-family: 'Lato', sans-serif;
 }
 
@@ -677,7 +687,7 @@ nav,
 button,
 form,
 p,
-.blog li {
+.blogpage li {
   font-size: 2rem;
 }
 
@@ -972,7 +982,7 @@ footer a {
     color: inherit;
   }
   p,
-  .blog li {
+  .blogpage li {
     line-height: calc(3.2rem * .8);
     letter-spacing: calc(2px * .8);
   }

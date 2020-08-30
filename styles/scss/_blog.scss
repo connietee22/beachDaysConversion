@@ -1,5 +1,5 @@
 
-.blog {
+.blogpage {
     background: $ice-blue;
     padding: 60px 0px;
     p {
@@ -75,16 +75,23 @@ aside {
 .blog-article-image {
     box-shadow: 15px 15px $green-cyan;
     position: relative;
-    // left: -15px;
+    left: -15px;
 }
 
 .blog-article-text {
-    border: 2px solid $green-cyan;
-    padding: 40px 40px 40px 0px;
     border-left-style: none;
-    max-width: 750px;
+    border: 2px solid $green-cyan;
+}
+
+.blog-article-text {
+    padding: 40px 40px 40px 10%;
+}
+
+.comments {
+    margin: 0;
+    padding: 0;
     align-self: flex-end;
-    
+    width: 75%;
 }
 
 .blog-date {
@@ -101,10 +108,4 @@ aside {
     }
 }
 
-// .comments {
-//     p {
-//         .comment-date {
-//             color: $twilight-blue;
-//         } 
-//     }  
-// }
+

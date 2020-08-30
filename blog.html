@@ -49,35 +49,35 @@
             </div>
     </header>
 
-    <main class="blog">
+    <main class="blogpage">
         <section class="blog-aside-container">
-            <article class="blog-container">
+            <div class="blog-container">
                 <div class="blog-article-image">
                     <img src="./assets/post-image.jpg" alt="ramp leading towards beach house at night">
                 </div>
-                <div class="blog-article-text">
+                <article class="blog-article-text">
                     <h3>Five days of ocean seas</h3>
                     <p class="blog-date"><em>Monday January 21st, 2019 by <span class="darker-blue">Bora</span></em></p>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque facilis tempora fugit magnam quam? Quibusdam illo itaque provident nihil, id repellat perspiciatis fugiat quaerat sit sapiente reprehenderit dicta!</p>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda tempora ipsum magni quibusdam officia excepturi quasi, recusandae temporibus perferendis earum eaque dignissimos dolores nihil voluptatibus blanditiis est neque accusamus saepe.</p>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore nihil cumque natus inventore vero officia nulla harum laborum est autem, consectetur ut aspernatur eligendi illo totam velit corporis tempore? Iure debitis perferendis sed et tempore eos iste! Accusantium, dicta quod explicabo alias sit odio magnam deserunt id eius fugit delectus amet unde praesentium incidunt modi, ducimus labore reiciendis voluptate iure!</p>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates ut expedita sed, magni optio eveniet hic, nisi est iste impedit placeat laborum quaerat. Qui, eius!</p>
-                </div>
-            </article>
-                <div class="comments">
-                        <h4>Comments</h4>
-                        <div class="comment-flex-container">
-                            <img src="./assets/comment-image.jpg" alt="user commenter - Reyansh">
-                            <div>
-                                <p class="comment-date">
-                                    Tuesday October 9th, 2019 by Reyansh
-                                </p>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa quo ipsa odio earum! Nisi minima
-                                    necessitatibus dolorum sit quia voluptate velit, optio eum veritatis pariatur laudantium fuga quo, eius
-                                    tenetur? Id consequuntur sequi ipsam autem?</p>
-                            </div>
+                </article>
+                <div class="comments wrapper">
+                    <h4>Comments</h4>
+                    <!-- first user comment -->
+                    <div class="comment-flex-container">
+                        <img src="./assets/comment-image.jpg" alt="user commenter - Reyansh">
+                        <div>
+                            <p class="comment-date">
+                                Tuesday October 9th, 2019 by Reyansh
+                            </p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa quo ipsa odio earum! Nisi minima
+                                necessitatibus dolorum sit quia voluptate velit, optio eum veritatis pariatur laudantium fuga quo, eius
+                                tenetur? Id consequuntur sequi ipsam autem?</p>
                         </div>
                     </div>
+                    <!-- second user comment -->
                     <div class="comment-flex-container">
                         <img src="./assets/comment-image2.jpg" alt="user commenter - Olivia">
                         <div>
@@ -89,6 +89,7 @@
                                 tenetur?</p>
                         </div>
                     </div>
+                </div>
                     <form class="blog-form">
                         <label for="name" id="name" class="name"></label>
                         <input type="text" id="name" class="name" placeholder="Name">
@@ -98,6 +99,7 @@
                         <button type="submit">Post Comment</button>
                     </form>
                 </div>
+            </div>
             <!-- ASIDE BOX -->
             <aside>
                 <img src="./assets/sidebar-image.jpg" alt="beach house and pier with forest background">
