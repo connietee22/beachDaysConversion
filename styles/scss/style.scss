@@ -32,7 +32,6 @@ $spruce: #0C5F4C;
 @import "home";
 @import "blog";
 @import "contact";
-@import "media-queries";
 
 
 
@@ -140,8 +139,7 @@ a {
     color: inherit;
 }
 
-p,
-.blog li {
+p {
     line-height: 3.2rem;
     letter-spacing: 2px;
 }
@@ -286,7 +284,7 @@ footer {
     }
 
     .article-text-2 {
-        padding: 100px 0 50px;
+        padding: 100px 0 60px;
     }
 
     .article-container {
@@ -309,11 +307,11 @@ footer {
     }
 
     .article-img1 {
-        margin-top: 50px;
+        margin-top: 150px;
     }
 
     .article-img2 {
-        margin-bottom: 50px;
+        margin-bottom: 100px;
     }
 
 // ** BLOG - main section
