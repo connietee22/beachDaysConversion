@@ -935,6 +935,15 @@ footer a {
   .logo {
     font-size: calc(1.75rem + 1.75vw);
   }
+  button,
+  form,
+  p,
+  .read-more,
+  .blogpage li {
+    font-size: 1.8rem;
+    line-height: 2.9rem;
+    letter-spacing: 1.8;
+  }
   .home-header .main-title {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -962,12 +971,12 @@ footer a {
             flex-direction: row;
   }
   aside img {
-    width: 30%;
+    height: 400px;
     -o-object-fit: cover;
        object-fit: cover;
   }
   aside .text {
-    padding-top: 0;
+    padding: 0px 30px;
   }
   .article-text-wrapper,
   .blog-article-text {
