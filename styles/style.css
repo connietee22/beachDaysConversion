@@ -248,6 +248,11 @@ textarea {
   overflow: hidden;
 }
 
+.visit-summary p,
+.text-summary p {
+  margin-bottom: 15px;
+}
+
 .home section:nth-child(odd) {
   background: #FAfffe;
 }
@@ -300,10 +305,6 @@ textarea {
   -webkit-box-ordinal-group: 0;
       -ms-flex-order: -1;
           order: -1;
-}
-
-.visit-summary p {
-  margin-bottom: 15px;
 }
 
 .visit-guyana-image {
@@ -388,12 +389,15 @@ textarea {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  padding-bottom: 50px;
 }
 
 .article-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -422,22 +426,41 @@ textarea {
       -ms-flex-order: 10;
           order: 10;
   position: relative;
-  bottom: -50px;
+  bottom: -90px;
   -webkit-box-shadow: -15px 15px #50E3C2;
           box-shadow: -15px 15px #50E3C2;
 }
 
 .text-summary {
-  padding: 60px 0px;
+  padding: 60px 0px 0px 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.text-items {
+  width: 80%;
+  max-width: 500px;
 }
 
 .article-text-1,
 .article-img2 {
   margin-right: 0px;
+  padding-left: 0px;
 }
 
 .article-text-2 {
-  margin-left: 80px;
+  text-align: right;
+  padding-top: 75px;
+}
+
+.article-text-2 .text-items {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
 }
 
 .offers-image {
@@ -1043,23 +1066,11 @@ footer a {
     width: 100%;
     margin-bottom: 50px;
   }
-  .articles-quadrant-container {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    padding: 0px;
-  }
-  .article-container {
-    width: 100%;
-    margin: 0px;
-  }
   .article-img1,
   .article-img2 {
+    position: static;
     width: 100%;
+    margin: 0 auto;
     -webkit-box-shadow: none;
             box-shadow: none;
   }
@@ -1071,9 +1082,9 @@ footer a {
   .article-text-1,
   .article-text-2 {
     width: 90%;
-    margin: 0 auto;
+    margin: 0px auto;
     text-align: center;
-    padding: 40px 0px 60px;
+    padding: 50px 0px 60px;
   }
   .offers-text {
     width: 90%;

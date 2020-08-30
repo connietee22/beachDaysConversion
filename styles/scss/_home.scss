@@ -1,5 +1,12 @@
 //***HOME - HEADER SECTION
 
+.visit-summary,
+.text-summary {
+    p {
+        margin-bottom: 15px;
+    }
+}
+
 .home {
     section:nth-child(odd) {
         background: $ice-blue;
@@ -41,9 +48,6 @@
     width: calc(75% - 50px);
     padding-right: 50px;
     order: -1;
-    p {
-        margin-bottom: 15px;
-    }
 }
 
 .visit-guyana-image {
@@ -108,10 +112,12 @@
 .articles-quadrant-container {
     display: flex;
     flex-direction: column;
+    padding-bottom: 50px;
 }
 
 .article-container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     img {
         object-fit: cover;
@@ -122,7 +128,6 @@
 .article-container > * {
     width: calc((100% - 80px) / 2);
     margin-right: 80px;
-    // height: 400px;
 }
 
 .article-img1 {
@@ -134,21 +139,33 @@
 .article-img2 {
     order: 10;
     position: relative;
-    bottom: -50px;
+    bottom: -90px;
     box-shadow: -15px 15px $green-cyan;
 }
 
 .text-summary {
-    padding: 60px 0px;
+    padding: 60px 0px 0px 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.text-items {
+    width: 80%;
+    max-width: 500px;
 }
 
 .article-text-1,
 .article-img2 {
     margin-right: 0px;
+    padding-left: 0px;
 }
 
 .article-text-2 {
-    margin-left: 80px;
+    text-align: right;
+    padding-top: 75px;
+    .text-items {
+        align-self: flex-end;
+    }
 }
 
 
