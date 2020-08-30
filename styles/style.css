@@ -386,6 +386,7 @@ textarea {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding: 80px 0;
 }
 
 .article-container {
@@ -396,6 +397,8 @@ textarea {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   width: calc((100% - 100px) / 2);
   margin-right: 100px;
 }
@@ -406,7 +409,7 @@ textarea {
 
 .article-img1 {
   position: relative;
-  top: -50px;
+  top: -125px;
   -webkit-box-shadow: 15px 15px #50E3C2;
           box-shadow: 15px 15px #50E3C2;
 }
@@ -414,7 +417,7 @@ textarea {
 .article-img2 {
   position: relative;
   right: 0px;
-  bottom: -250px;
+  bottom: -125px;
   -webkit-box-ordinal-group: 5;
       -ms-flex-order: 4;
           order: 4;
@@ -424,14 +427,13 @@ textarea {
 
 .article-text-1,
 .article-text-2 {
-  width: 80%;
+  width: 70%;
 }
 
 .article-text-1 {
   text-align: right;
   -ms-flex-item-align: end;
       align-self: flex-end;
-  margin: 100px 0px;
 }
 
 .offers-image {
@@ -876,14 +878,13 @@ footer a {
 
 @media (max-width: 1250px) {
   .article-text-1 {
-    padding: 50px 0 100px;
+    padding: 75px 0px;
   }
   .article-text-2 {
-    padding: 100px 0 60px;
+    padding-bottom: 60px;
   }
   .article-container {
     width: 90%;
-    margin-right: 60px;
   }
   .article-container:last-child {
     margin-right: 0px;
@@ -898,12 +899,6 @@ footer a {
     height: 100%;
     -o-object-fit: cover;
        object-fit: cover;
-  }
-  .article-img1 {
-    margin-top: 150px;
-  }
-  .article-img2 {
-    margin-bottom: 100px;
   }
   .blog-container {
     margin-right: 30px;
@@ -1053,6 +1048,40 @@ footer a {
   .icon-text-container {
     width: 100%;
     margin-bottom: 50px;
+  }
+  .articles-quadrant-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 40px 0px 0px 0px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .article-container {
+    width: 100%;
+    margin: 0px;
+    text-align: center;
+  }
+  .article-img1,
+  .article-img2 {
+    width: 100%;
+    height: auto;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  .article-img2 {
+    -webkit-box-ordinal-group: 1;
+        -ms-flex-order: 0;
+            order: 0;
+  }
+  .article-text-1,
+  .article-text-2 {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 40px 0px 60px;
   }
   .offers-text {
     width: 90%;

@@ -280,16 +280,15 @@ footer {
 // 1250PX HOME - article section
 
     .article-text-1 {
-        padding: 50px 0 100px;
+        padding: 75px 0px;
     }
 
     .article-text-2 {
-        padding: 100px 0 60px;
+        padding-bottom: 60px;
     }
 
     .article-container {
         width: 90%;
-        margin-right: 60px;
     }
 
     .article-container:last-child {
@@ -304,14 +303,6 @@ footer {
             height: 100%;
             object-fit: cover;
         }
-    }
-
-    .article-img1 {
-        margin-top: 150px;
-    }
-
-    .article-img2 {
-        margin-bottom: 100px;
     }
 
 // ** BLOG - main section
@@ -494,6 +485,38 @@ footer {
     .icon-text-container {
         width: 100%;
         margin-bottom: 50px;
+    }
+
+    // 768px HOME - articles section 
+    .articles-quadrant-container {
+        flex-direction: column;
+        padding: 40px 0px 0px 0px;
+        align-items: center;
+    }
+
+    .article-container {
+        width: 100%;
+        margin: 0px;
+        text-align: center;
+    }
+
+    .article-img1,
+    .article-img2 {
+        width: 100%;
+        height: auto;
+        box-shadow: none;
+    }
+
+    .article-img2 {
+        order: 0;
+    }
+
+    .article-text-1,
+    .article-text-2 {
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
+        padding: 40px 0px 60px;
     }
 
     // 768px HOME - offers section
