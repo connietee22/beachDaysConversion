@@ -51,14 +51,14 @@ img {
 	left: -1000px;
 	top: 5px;
 	z-index: 999;
-	background: white;
-	color: black;
+	background: black;
+	color: white;
 	font-size: 2rem;
 }
 
-.skip-link:focus {
-	left: 0;
-}
+// .skip-link:focus {
+// 	left: 0;
+// }
 
 .wrapper {
     width: 90%;
@@ -80,7 +80,8 @@ textarea,
 }
 
 h1,
-button {
+button,
+.read-more {
     font-family: 'Playfair Display SC', serif; 
 }
 
@@ -95,6 +96,7 @@ nav,
 button,
 form,
 p,
+.read-more,
 .blogpage li {
     font-size: 2rem;
 }
@@ -106,9 +108,7 @@ h1 {
     z-index: 10;
     span {
         display: block;
-        // font-family: 'Lato', sans-serif;
         font-size: 6.2rem;
-        // font-size: calc(3.1rem + 2vw);
         line-height: 5.8rem;
         letter-spacing: 6.7;
         text-transform: lowercase;
@@ -117,7 +117,6 @@ h1 {
 }
 
 h2 {
-    // font-size: 6.2rem;
     font-size: calc(3.1rem + 2vw);
     letter-spacing: 9px;
     line-height: 5.8rem;
@@ -138,8 +137,21 @@ h4 {
 }
 
 a {
+    display: inline-block;
     text-decoration: none;
     color: inherit;
+    &:hover,
+    &:focus {
+        transform: scale(1.1);
+        color: $light-blue;
+        border-bottom: 3px solid $light-blue;
+    }
+}
+
+.skip-link:focus {
+    left: 0;
+    color: $spruce;
+    background: white;
 }
 
 p {
@@ -147,14 +159,19 @@ p {
     letter-spacing: 2px;
 }
 
-button {
+button,
+.read-more {
     background: $twilight-blue;
-    a {
-        line-height: 3.4rem;
-        letter-spacing: 1;
-        color: $ice-blue;
-        text-decoration: none;
-        padding: 0px 10px;
+    line-height: 3.4rem;
+    letter-spacing: 1;
+    color: $ice-blue;
+    text-decoration: none;
+    padding: 0px 10px;
+    &:hover,
+    &:focus {
+        background: $ice-blue;
+        color: $twilight-blue;
+        border: 2px solid $green-cyan;
     }
 }
 
@@ -165,6 +182,7 @@ form {
     background-color: #fff;
 }
 
+
 //***GENERAL header styles
 header {
     a {
@@ -172,11 +190,6 @@ header {
         margin: 0  20px;
         color: $ice-blue;
         line-height: 3rem;
-        &:hover,
-        &:focus {
-            color: $light-blue;
-            border-bottom: 3px solid $light-blue;
-        }
     } 
 }
 
@@ -256,10 +269,6 @@ textarea {
 
 button[type="submit"] {
     width: 100%;
-    line-height: 3.2px;
-    letter-spacing: 1;
-    color: $ice-blue;
-    padding: 20px;
 }
 
 //***GENERAL FOOTER

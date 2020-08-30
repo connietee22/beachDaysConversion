@@ -618,6 +618,14 @@ aside .find-more {
   padding: 100px 50px 150px;
 }
 
+.contact-info a:hover,
+.contact-info a:focus {
+  color: #063974;
+  border-bottom: 3px solid #063974;
+  -webkit-transform: none;
+          transform: none;
+}
+
 .socials {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -648,13 +656,9 @@ img {
   left: -1000px;
   top: 5px;
   z-index: 999;
-  background: white;
-  color: black;
+  background: black;
+  color: white;
   font-size: 2rem;
-}
-
-.skip-link:focus {
-  left: 0;
 }
 
 .wrapper {
@@ -676,7 +680,8 @@ textarea,
 }
 
 h1,
-button {
+button,
+.read-more {
   font-family: 'Playfair Display SC', serif;
 }
 
@@ -691,6 +696,7 @@ nav,
 button,
 form,
 p,
+.read-more,
 .blogpage li {
   font-size: 2rem;
 }
@@ -731,8 +737,22 @@ h4 {
 }
 
 a {
+  display: inline-block;
   text-decoration: none;
   color: inherit;
+}
+
+a:hover, a:focus {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  color: #D2F9F1;
+  border-bottom: 3px solid #D2F9F1;
+}
+
+.skip-link:focus {
+  left: 0;
+  color: #0C5F4C;
+  background: white;
 }
 
 p {
@@ -740,16 +760,22 @@ p {
   letter-spacing: 2px;
 }
 
-button {
+button,
+.read-more {
   background: #063974;
-}
-
-button a {
   line-height: 3.4rem;
   letter-spacing: 1;
   color: #FAfffe;
   text-decoration: none;
   padding: 0px 10px;
+}
+
+button:hover, button:focus,
+.read-more:hover,
+.read-more:focus {
+  background: #FAfffe;
+  color: #063974;
+  border: 2px solid #50E3C2;
 }
 
 form {
@@ -769,11 +795,6 @@ header a {
   margin: 0  20px;
   color: #FAfffe;
   line-height: 3rem;
-}
-
-header a:hover, header a:focus {
-  color: #D2F9F1;
-  border-bottom: 3px solid #D2F9F1;
 }
 
 .contact-us,
@@ -860,10 +881,6 @@ textarea {
 
 button[type="submit"] {
   width: 100%;
-  line-height: 3.2px;
-  letter-spacing: 1;
-  color: #FAfffe;
-  padding: 20px;
 }
 
 footer {

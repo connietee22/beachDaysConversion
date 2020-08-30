@@ -25,6 +25,12 @@
     width: calc(40% - 40px);
     margin-left: 40px;
     padding: 100px 50px 150px;
+    a:hover,
+    a:focus {
+        color: $twilight-blue;
+        border-bottom: 3px solid $twilight-blue;
+        transform: none;
+    }
 }
 
 .socials {
@@ -37,3 +43,5 @@
         }
     }
 }
+
+    
