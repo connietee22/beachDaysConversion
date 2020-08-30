@@ -408,7 +408,6 @@ textarea {
 .article-container > * {
   width: calc((100% - 80px) / 2);
   margin-right: 80px;
-  height: 400px;
 }
 
 .article-img1 {
@@ -426,6 +425,10 @@ textarea {
   bottom: -50px;
   -webkit-box-shadow: -15px 15px #50E3C2;
           box-shadow: -15px 15px #50E3C2;
+}
+
+.text-summary {
+  padding: 60px 0px;
 }
 
 .article-text-1,
@@ -892,27 +895,6 @@ footer {
 
 footer a {
   color: #50E3C2;
-}
-
-@media (max-width: 1250px) {
-  .blog-container {
-    margin-right: 30px;
-  }
-  .blog-article-image {
-    margin-left: -50px;
-  }
-  aside {
-    position: relative;
-    right: -6px;
-  }
-  aside .text {
-    width: 90%;
-  }
-  aside img {
-    width: 300px;
-    position: relative;
-    right: 0;
-  }
 }
 
 @media (max-width: 1024px) {
