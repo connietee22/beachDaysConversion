@@ -253,6 +253,15 @@ textarea {
   margin-bottom: 15px;
 }
 
+.home h3,
+.home h4 {
+  color: #0C5F4C;
+}
+
+.articles-quadrant-container h3 {
+  color: #063974;
+}
+
 .home section:nth-child(odd) {
   background: #FAfffe;
 }
@@ -443,7 +452,7 @@ textarea {
 }
 
 .text-items {
-  width: 80%;
+  width: 85%;
   max-width: 500px;
 }
 
@@ -1065,6 +1074,16 @@ footer a {
   .icon-text-container {
     width: 100%;
     margin-bottom: 50px;
+  }
+  .text-summary {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .article-text-2 .text-items {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
   }
   .article-img1,
   .article-img2 {

@@ -373,14 +373,6 @@ footer {
         letter-spacing: calc(3.2px * .8);
     }
 
-    // nav li,
-    // button,
-    // form,
-    // p,
-    // .blogpage li {
-    //     font-size: calc(1.25rem + 1.25vw);
-    // }
-
 
     //**768PX - HEADER STYLES
     header li {
@@ -459,14 +451,15 @@ footer {
 
     //**768px HOME - articles section 
 
-    // .article-container {
-    //     width: 100%;
-    //     display:
-    // }
+    .text-summary {
+        align-items: center;
+    }
 
-    // text-summary {
-    //     justify-content: center;
-    // }
+    .article-text-2 {
+        .text-items {
+            align-self: center;
+        }
+    }
 
     .article-img1,
     .article-img2 {
@@ -487,6 +480,7 @@ footer {
         text-align: center;
         padding: 50px 0px 60px;
     }
+
 
     //**768px HOME - offers section
     .offers-text {

@@ -8,6 +8,19 @@
 }
 
 .home {
+    h3,
+    h4 {
+        color: $spruce;
+    }
+}
+
+.articles-quadrant-container {
+    h3 {
+        color: $twilight-blue;
+    }
+}
+
+.home {
     section:nth-child(odd) {
         background: $ice-blue;
     }
@@ -150,7 +163,7 @@
 }
 
 .text-items {
-    width: 80%;
+    width: 85%;
     max-width: 500px;
 }
 
