@@ -8,6 +8,10 @@
             margin-bottom: 0;
         }
     }
+    li {
+        line-height: 3.2rem;
+        letter-spacing: 2px;
+    }
 }
 
 .blog-date,
@@ -66,19 +70,21 @@ aside {
     width: 60%;
     position: relative;
     top: -200px;
-    // margin-right: 40px;
 }
 
 .blog-article-image {
     box-shadow: 15px 15px $green-cyan;
     position: relative;
-    left: -15px;
+    // left: -15px;
 }
 
 .blog-article-text {
     border: 2px solid $green-cyan;
     padding: 40px 40px 40px 0px;
     border-left-style: none;
+    max-width: 750px;
+    align-self: flex-end;
+    
 }
 
 .blog-date {

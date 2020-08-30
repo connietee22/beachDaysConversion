@@ -457,6 +457,11 @@ article {
   margin-bottom: 0;
 }
 
+.blog li {
+  line-height: 3.2rem;
+  letter-spacing: 2px;
+}
+
 .blog-date,
 .comment-date {
   color: #063974;
@@ -539,13 +544,15 @@ aside .find-more {
   -webkit-box-shadow: 15px 15px #50E3C2;
           box-shadow: 15px 15px #50E3C2;
   position: relative;
-  left: -15px;
 }
 
 .blog-article-text {
   border: 2px solid #50E3C2;
   padding: 40px 40px 40px 0px;
   border-left-style: none;
+  max-width: 750px;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
 }
 
 .blog-date {
