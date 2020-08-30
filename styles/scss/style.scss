@@ -389,6 +389,12 @@ footer {
         }
     }
 
+    .article-text-wrapper, 
+    .blog-article-text {
+        padding: 40px 50px;
+        // margin: 0 auto;
+    }
+
     // 1024px CONTACT US - form section
     input {
         width: 100%;
@@ -557,7 +563,8 @@ footer {
     }
 
     //768PX BLOG - main section
-   
+
+    
 
     //768px CONTACT - form section
 

@@ -556,16 +556,9 @@ aside .find-more {
   border-left-style: none;
 }
 
+.article-text-wrapper,
 .blog-article-text {
   padding: 40px 40px 40px calc(5% + 2.5vw);
-}
-
-.comments {
-  margin: 0;
-  padding: 0;
-  -ms-flex-item-align: end;
-      align-self: flex-end;
-  width: 75%;
 }
 
 .blog-date {
@@ -987,6 +980,10 @@ footer a {
   }
   aside .text {
     padding-top: 0;
+  }
+  .article-text-wrapper,
+  .blog-article-text {
+    padding: 40px 50px;
   }
   input {
     width: 100%;
