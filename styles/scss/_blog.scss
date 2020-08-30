@@ -79,12 +79,12 @@ aside {
 }
 
 .blog-article-text {
-    border-left-style: none;
     border: 2px solid $green-cyan;
+    border-left-style: none;
 }
 
 .blog-article-text {
-    padding: 40px 40px 40px 10%;
+    padding: 40px 40px 40px calc(5% + 2.5vw);
 }
 
 .comments {
