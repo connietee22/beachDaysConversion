@@ -662,6 +662,7 @@ img {
   margin: 0 auto;
 }
 
+h1 span,
 h2,
 h3,
 h4,
@@ -695,23 +696,22 @@ p,
 
 h1 {
   font-weight: 700;
-  font-size: 11.12rem;
+  font-size: calc(5.5rem + 4vw);
   color: #063974;
   z-index: 10;
 }
 
 h1 span {
   display: block;
-  text-transform: lowercase;
-  color: #0C5F4C;
-  font-size: 6.2rem;
+  font-size: calc(3.1rem + 2vw);
   line-height: 5.8rem;
   letter-spacing: 6.7;
-  font-family: 'Lato', sans-serif;
+  text-transform: lowercase;
+  color: #0C5F4C;
 }
 
 h2 {
-  font-size: 6.2rem;
+  font-size: calc(3.1rem + 2vw);
   letter-spacing: 9px;
   line-height: 5.8rem;
   color: #FAfffe;
@@ -921,14 +921,19 @@ footer a {
 }
 
 @media (max-width: 1024px) {
-  h1 {
-    font-size: 8.4rem;
-    font-size: calc(11.2rem * .75);
-  }
   h1 span {
-    font-size: calc(6.2rem * .75);
     line-height: calc(5.8rem * .75);
     letter-spacing: calc(6.7 * .75);
+  }
+  nav,
+  button,
+  form,
+  p,
+  .blogpage li {
+    font-size: calc(1.25rem + 1vw);
+  }
+  .logo {
+    font-size: calc(1.75rem + 1.75vw);
   }
   .home-header .main-title {
     -webkit-box-pack: center;
@@ -949,16 +954,11 @@ footer a {
 }
 
 @media (max-width: 768px) {
-  h1 {
-    font-size: calc(11.2rem * .6);
-  }
   h1 span {
-    font-size: calc(6.2rem * .6);
     line-height: calc(5.8rem * .6);
     letter-spacing: calc(6.7 * .6);
   }
   h2 {
-    font-size: calc(6.2rem * .8);
     letter-spacing: calc(9px * .8);
     line-height: calc(5.8rem * .8);
   }
@@ -1140,11 +1140,7 @@ footer a {
     line-height: calc(5.8rem * .4);
     letter-spacing: calc(6.7 * .4);
   }
-  .logo {
-    font-size: calc(3.46rem * .75);
-  }
   h2 {
-    font-size: calc(6.2rem * .6);
     letter-spacing: calc(9px * .6);
     line-height: calc(5.8rem * .6);
   }
