@@ -535,6 +535,13 @@ aside .text {
   padding: 15px;
 }
 
+aside .text a:hover,
+aside .text a:focus {
+  color: #50E3C2;
+  -webkit-transform: none;
+          transform: none;
+}
+
 aside ul {
   list-style: none;
 }
@@ -550,7 +557,7 @@ aside h4 {
   color: #063974;
 }
 
-aside .find-more {
+.find-more {
   display: block;
   color: #0C5F4C;
   font-weight: 700;

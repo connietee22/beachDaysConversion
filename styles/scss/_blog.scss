@@ -51,6 +51,11 @@ aside {
     .text {
         background: #fff;
         padding: 15px;
+        a:hover,
+        a:focus {
+            color: $green-cyan;
+            transform: none;
+        }
     }
     ul {
         list-style: none;
@@ -63,12 +68,13 @@ aside {
     }
     h4 {
         color: $twilight-blue;
-    }
-    .find-more {
-        display: block;
-        color: $spruce;
-        font-weight: 700;
-    }
+    } 
+}
+
+.find-more {
+    display: block;
+    color: $spruce;
+    font-weight: 700;
 }
 
 .blog-container {
