@@ -1,11 +1,9 @@
 //***CONTACT - general
-
 .contact-main {
     background: $ice-blue;
 }
 
 //***CONTACT - header
-
 .contact-us {
     @include custom-header-bg('../assets/contact-image-1.jpg');
 }
@@ -50,5 +48,3 @@
         }
     }
 }
-
-    
