@@ -364,6 +364,13 @@ textarea {
   margin-bottom: 50px;
 }
 
+.icon-text-container a:hover,
+.icon-text-container a:focus {
+  color: #50E3C2;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
 .extra-text {
   width: calc(100% - 55px);
 }

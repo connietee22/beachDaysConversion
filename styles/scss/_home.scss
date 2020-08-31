@@ -114,6 +114,11 @@
     flex-wrap: wrap;
     width: 50%;
     margin-bottom: 50px;
+    a:hover,
+    a:focus {
+        color: $green-cyan;
+        transform: scale(1.1);
+    }
 }
 
 .extra-text {
