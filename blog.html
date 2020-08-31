@@ -57,55 +57,67 @@
     </header>
 
     <main class="blogpage">
+        <!-- flex container for blog and aside -->
         <section class="blog-aside-container">
+            <!-- flex container to stack blog and comments section -->
             <div class="blog-container">
                 <div class="blog-article-image">
                     <img src="./assets/post-image.jpg" alt="ramp leading towards beach house at night">
                 </div>
-                        <article class="blog-article-text">
-                            <h3>Five days of ocean seas</h3>
-                            <p class="blog-date"><em>Monday January 21st, 2019 by <span class="darker-blue">Bora</span></em></p>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque facilis tempora fugit magnam quam? Quibusdam illo itaque provident nihil, id repellat perspiciatis fugiat quaerat sit sapiente reprehenderit dicta!</p>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda tempora ipsum magni quibusdam officia excepturi quasi, recusandae temporibus perferendis earum eaque dignissimos dolores nihil voluptatibus blanditiis est neque accusamus saepe.</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore nihil cumque natus inventore vero officia nulla harum laborum est autem, consectetur ut aspernatur eligendi illo totam velit corporis tempore? Iure debitis perferendis sed et tempore eos iste! Accusantium, dicta quod explicabo alias sit odio magnam deserunt id eius fugit delectus amet unde praesentium incidunt modi, ducimus labore reiciendis voluptate iure!</p>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates ut expedita sed, magni optio eveniet hic, nisi est iste impedit placeat laborum quaerat. Qui, eius!</p>
-                        </article>
-                        <div class="article-text-wrapper">
-                            <h4>Comments</h4>
-                            <!-- first user comment -->
-                            <div class="comment-flex-container">
-                                <img src="./assets/comment-image.jpg" alt="user commenter - Reyansh">
-                                <div>
-                                    <p class="comment-date">
-                                        Tuesday October 9th, 2019 by Reyansh
-                                    </p>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa quo ipsa odio earum! Nisi minima
-                                        necessitatibus dolorum sit quia voluptate velit, optio eum veritatis pariatur laudantium fuga quo, eius
-                                        tenetur? Id consequuntur sequi ipsam autem?</p>
-                                </div>
-                            </div>
-                            <!-- second user comment -->
-                            <div class="comment-flex-container">
-                                <img src="./assets/comment-image2.jpg" alt="user commenter - Olivia">
-                                <div>
-                                    <p class="comment-date">
-                                        Wednesday October 10th, 2019 by Olivia
-                                    </p>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa quo ipsa odio earum! Nisi minima
-                                        necessitatibus dolorum sit quia voluptate velit, optio eum veritatis pariatur laudantium fuga quo, eius
-                                        tenetur?</p>
-                                </div>
-                            </div>
-                            <form class="blog-form">
-                                <label for="name" class="visuallyHidden">Name</label>
-                                <input type="text" id="name" class="name" placeholder="Name">
-                                <label for="email" class="visuallyHidden">Email Address</label>
-                                <input type="email" id="email" class="email" placeholder="Email address">
-                                <label for="message" class="visuallyHidden">Message Box</label>
-                                <textarea name="message" id="message" cols="30" rows="10" placeholder="Message"></textarea>
-                                <button type="submit">Post Comment</button>
-                            </form>
+                <article class="blog-article-text">
+                    <h3>Five days of ocean seas</h3>
+                    <p class="blog-date">
+                        <em>Monday January 21st, 2019 by <span class="darker-blue">Bora</span></em>
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque facilis tempora fugit magnam quam? Quibusdam illo itaque provident nihil, id repellat perspiciatis fugiat quaerat sit sapiente reprehenderit dicta!
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda tempora ipsum magni quibusdam officia excepturi quasi, recusandae temporibus perferendis earum eaque dignissimos dolores nihil voluptatibus blanditiis est neque accusamus saepe.
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore nihil cumque natus inventore vero officia nulla harum laborum est autem, consectetur ut aspernatur eligendi illo totam velit corporis tempore? Iure debitis perferendis sed et tempore eos iste! Accusantium, dicta quod explicabo alias sit odio magnam deserunt id eius fugit delectus amet unde praesentium incidunt modi, ducimus labore reiciendis voluptate iure!
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates ut expedita sed, magni optio eveniet hic, nisi est iste impedit placeat laborum quaerat. Qui, eius!
+                    </p>
+                </article>
+                <!-- to keep in line with blog, in lieu of regular wrapper -->
+                <div class="article-text-wrapper">
+                    <h4>Comments</h4>
+                    <!-- first user comment -->
+                    <div class="comment-flex-container">
+                        <img src="./assets/comment-image.jpg" alt="user commenter - Reyansh">
+                        <div>
+                            <p class="comment-date">
+                                Tuesday October 9th, 2019 by Reyansh
+                            </p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa quo ipsa odio earum! Nisi minima
+                                necessitatibus dolorum sit quia voluptate velit, optio eum veritatis pariatur laudantium fuga quo, eius
+                                tenetur? Id consequuntur sequi ipsam autem?</p>
                         </div>
+                    </div>
+                    <!-- second user comment -->
+                    <div class="comment-flex-container">
+                        <img src="./assets/comment-image2.jpg" alt="user commenter - Olivia">
+                        <div>
+                            <p class="comment-date">
+                                Wednesday October 10th, 2019 by Olivia
+                            </p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa quo ipsa odio earum! Nisi minima
+                                necessitatibus dolorum sit quia voluptate velit, optio eum veritatis pariatur laudantium fuga quo, eius
+                                tenetur?</p>
+                        </div>
+                    </div>
+                    <form class="blog-form">
+                        <label for="name" class="visuallyHidden">Name</label>
+                        <input type="text" id="name" class="name" placeholder="Name">
+                        <label for="email" class="visuallyHidden">Email Address</label>
+                        <input type="email" id="email" class="email" placeholder="Email address">
+                        <label for="message" class="visuallyHidden">Message Box</label>
+                        <textarea name="message" id="message" cols="30" rows="10" placeholder="Message"></textarea>
+                        <button type="submit">Post Comment</button>
+                    </form>
                 </div>
             </div>
             <!-- ASIDE BOX -->
@@ -115,7 +127,9 @@
                 </div>
                 <div class="text">
                     <h4>Our mission</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, autem! Iste quibusdam. <a href="#" class="find-more">Find out more.</a></p>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, autem! Iste quibusdam. <a href="#" class="find-more">Find out more.</a>
+                    </p>
                     <h4>Recent Posts</h4>
                     <ul>
                         <li><a href="#">Lorem ipsum dolor.</a></li>
@@ -127,6 +141,7 @@
             </aside>
         </section>
     </main>
+
     <footer>
         <p>Created at <a href="https://junocollege.com/">Juno College</a> ©2020</p>
     </footer>
