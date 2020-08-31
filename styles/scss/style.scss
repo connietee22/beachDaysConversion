@@ -172,7 +172,7 @@ form {
 //***GENERAL header styles
 header {
     a {
-        padding: 5px 10px;
+        padding: 5px 8px;
         margin: 0 20px;
         color: $ice-blue;
         line-height: 3rem;
@@ -316,14 +316,24 @@ footer {
     }
 
     aside {
-        order: -1; // to bring up top
         flex-direction: row; 
+        justify-content: center;
+        margin: 20px auto 50px;
+        div:first-child {
+            margin: 0 20px;
+            width: 20%;
+        }
         img {
-            height: 400px;
+            height: 100%;
             object-fit: cover;
         }
         .text {
-            padding: 0px 30px;
+            width: calc(80% - 60px);
+            border: 3px solid $green-cyan;
+            align-self: center;
+            margin-right: 20px;
+            border-left-style: none;
+            border-right-style: none;
         }
     }
 
@@ -489,9 +499,23 @@ footer {
     }
 
     //**768px BLOG - main section
+
+    aside {
+        img {
+            // width: 150px;
+            // height: 385px;
+        }
+    }
+
     .article-text-wrapper,
     .blog-article-text {
-        padding: 40px 5vw;
+        padding: 40px 5vw; // to centre padding
+    }
+
+    input,
+    textarea {
+        padding: 15px;
+        margin-bottom: 30px;
     }
 
     //768px CONTACT - form section
@@ -557,5 +581,22 @@ footer {
     // 500px HOME - gallery section
     .gallery-flex-container {
         grid-template-columns: 1fr;
+    }
+
+    // 500px BLOG - aside section
+    aside {
+        flex-direction: column;
+        div:first-child {
+            width: 100%;
+            height: 200px;
+            margin: 0 auto 30px;
+        }
+        img {
+            object-fit: cover;
+        }
+        .text {
+            width: 90%;
+            margin: 0 auto;
+        }
     }
 }
