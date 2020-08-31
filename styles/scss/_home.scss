@@ -62,7 +62,7 @@
 .visit-summary {
     width: calc(75% - 50px); // text to left
     padding-right: 50px;
-    order: -1;
+    order: -1; // to place before image
 }
 
 .visit-guyana-image {

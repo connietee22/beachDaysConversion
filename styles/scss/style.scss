@@ -109,7 +109,6 @@ h2 {
 h3 {
     font-size: 3.5rem;
     letter-spacing: 3.8px;
-    // line-height: calc(2.9rem + 2.9vw);
     line-height: 5.8rem;
 }
 
@@ -378,9 +377,8 @@ footer {
     }
 
     h4 {
-        font-size: calc(3.0rem * .8);
-        line-height: calc(5.8rem * .8);
-        letter-spacing: calc(3.2px * .8);
+        font-size: calc(1.5rem + 1.5vw);
+        line-height: calc(2.9rem + 2.9vw);
     }
 
     //**768PX - GENERAL HEADER STYLES
@@ -426,7 +424,7 @@ footer {
     }
     
     .visit-summary {
-        order: 0;
+        order: 0; //to place back after images
         width: 100%;
         text-align: center;
         padding: 30px 0px;
@@ -484,7 +482,7 @@ footer {
     }
 
     .article-img2 {
-        order: 0;
+        order: 0; // to set back to stacking order on top of text
     }
 
     .article-text-1,
@@ -513,7 +511,7 @@ footer {
         margin-bottom: 30px;
     }
 
-    //768px CONTACT - form section
+    //**768px CONTACT - form section
     .contact-form {
         position: static; // brings form back into section
         width: 100%;
@@ -536,8 +534,7 @@ footer {
 //****SMALL MOBILE
 
 @media (max-width: 500px) {
-
-    // 500px GENERAL styles
+    //**500px GENERAL styles
     h1 {
         font-size: calc(11.2rem * .4);
         span {
@@ -548,12 +545,11 @@ footer {
     }
 
     h2 {
-        // font-size: calc(6.2rem * .6);
         letter-spacing: calc(9px * .6);
         line-height: calc(5.8rem * .6);
     }
 
-    // 500px HOME - header
+    //**500px HOME - header
     
     .home-header {        
         .main-title {
@@ -561,7 +557,7 @@ footer {
         }
     }
 
-    // 500px HOME - visit section
+    //**500px HOME - visit section
     .header-inset-image {
         display: none;
     } // remove sunglasses image completely
@@ -573,12 +569,12 @@ footer {
         }
     }
 
-    // 500px HOME - gallery section
+    //**500px HOME - gallery section
     .gallery-flex-container {
         grid-template-columns: 1fr;
     }
 
-    // 500px BLOG - aside section
+    //**500px BLOG - aside section
     aside {
         flex-direction: column;
         div:first-child {
