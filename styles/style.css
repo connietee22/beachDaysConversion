@@ -886,6 +886,10 @@ nav ul {
   font-size: 3rem;
 }
 
+.hamburger a {
+  margin: 0;
+}
+
 input,
 textarea {
   padding: 20px;
